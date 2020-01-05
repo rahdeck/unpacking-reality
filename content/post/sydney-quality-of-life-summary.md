@@ -57,7 +57,7 @@ Also in Japan obesity and associated health conditions are not an issue, unlike 
 
 - Cyclist-friendly streets
 
-  I've [raved about it before](https://unpackingreality.blogspot.com.au/2016/06/livability-of-japanese-cities.html).  
+  I've [raved about it before]({{< ref livability-of-japanese-cities.md >}}).  
   
 - Extremely high level of customer service
 

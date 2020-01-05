@@ -3,7 +3,8 @@ title: "University of 'Moving Around'"
 published: 2016-07-11T03:46:00-07:00
 author: "rahdeck"
 ---
-International moves we've made so far
+[![](/images/thumbnails/2016-07-11-university-of-moving-around-international_moves.png)](/images/2016-07-11-university-of-moving-around-international_moves.png)
+***International moves we've made so far***
 
 It may not be a perfect analogy but living in multiple countries might be compared to taking multiple majors in university. The main differences from a real university are:  
 

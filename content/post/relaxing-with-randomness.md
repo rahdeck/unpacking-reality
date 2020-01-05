@@ -3,8 +3,8 @@ title: "Relaxing with randomness"
 published: 2016-08-03T05:37:00.002000-07:00
 author: "rahdeck"
 ---
-![](/images/2016-08-03-relaxing-with-randomness-relaxing_with_randomness.jpg)
-*Randomness abound in nature!*
+![](/images/thumbnails/2016-08-03-relaxing-with-randomness-relaxing_with_randomness.jpg)[(/images/2016-08-03-relaxing-with-randomness-relaxing_with_randomness.jpg)]
+***Randomness abound in nature!***
   
 Who doesn't like looking at ocean waves, a flowing river, a burning fire or tree leaves moving in the wind? I bet you have spent some time looking at one of those things for longer than you thought, sweetly idling away.I know I love looking at them and other similar phenomena such as falling snow flakes or patterns of rain drops in the puddles.
 
