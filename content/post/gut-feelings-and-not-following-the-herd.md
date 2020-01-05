@@ -1,6 +1,6 @@
 ---
 title: "Gut feelings and not following the herd"
-published: 2016-06-15T04:04:00.001000-07:00
+published: 2016-04-04T00:00:00-07:00
 author: "rahdeck"
 ---
 Today’s topic is hard to write down in a cohesive manner, maybe because it still lacks clarity in my mind. So the deal is: sometimes I have those gut feelings or opinions on something that I cannot clearly argument or justify, but I know deep down they are right for my circumstance. To make matters worse those gut feelings also tend to go against the popular or mass-media opinions or social pressure so it’s all the harder to argue for them publicly.

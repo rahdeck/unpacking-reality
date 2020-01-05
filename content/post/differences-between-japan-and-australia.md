@@ -1,6 +1,6 @@
 ---
 title: "Differences between Japan and Australia"
-published: 2016-06-15T04:16:00.001000-07:00
+published: 2016-04-19T00:00:00-07:00
 author: "rahdeck"
 ---
 Missed the whole ten days of entries, will be hard to make up for it. Anyway, today’s piece is on differences between Japan and Australia, or, more specifically, Tokyo and Sydney. The two biggest ones that are immediately felt with your senses are noise and smell.

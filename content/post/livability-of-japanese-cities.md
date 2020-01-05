@@ -1,6 +1,6 @@
 ---
 title: "Livability of Japanese cities"
-published: 2016-06-15T04:22:00-07:00
+published: 2016-05-17T00:00:00-07:00
 author: "rahdeck"
 ---
 Moving outside of Japan made me realize just how livable the place is. Its livability is totally hidden from outsiders whose only impressions about Japan are made based on movies or comic books. When I tell friends that Sydney is MUCH louder than Tokyo they are invariably surprised. That’s because their image of Tokyo is based on media’s representation of it, and not on their own actual experience of it. Unfortunately, lack of noise is not transpiring through media flash news or snapshots of Tokyo’s skyline. This is just a single example but there are many more.

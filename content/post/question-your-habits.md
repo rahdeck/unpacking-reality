@@ -1,6 +1,6 @@
 ---
 title: "Question your habits"
-published: 2016-06-15T03:50:00-07:00
+published: 2016-03-29T00:00:00-07:00
 author: "rahdeck"
 ---
 So it’s the next beautiful morning here in Tokyo.

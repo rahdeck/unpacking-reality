@@ -1,6 +1,6 @@
 ---
 title: "The stress of moving"
-published: 2016-06-15T03:51:00-07:00
+published: 2016-03-30T00:00:00-07:00
 author: "rahdeck"
 ---
 Moving across continents, that is.

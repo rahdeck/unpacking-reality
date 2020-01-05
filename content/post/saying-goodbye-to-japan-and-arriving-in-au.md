@@ -1,6 +1,6 @@
 ---
 title: "Saying goodbye to Japan and arriving in AU "
-published: 2016-06-15T04:14:00-07:00
+published: 2016-04-09T00:00:00-07:00
 author: "rahdeck"
 ---
 The missing entries in the past 3 days were due to our moving between continents and lack of PC to write on. I had to return my work laptop to IT in Japan and will pick up a new one soon here in Australia.

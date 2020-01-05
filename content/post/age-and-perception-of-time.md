@@ -1,6 +1,6 @@
 ---
 title: "Age and perception of time"
-published: 2016-06-15T04:09:00.001000-07:00
+published: 2016-04-05T00:00:00-07:00
 author: "rahdeck"
 ---
 How aging affects your perception of time! It’s a well known phenomenon that years seem to go by faster as you get older. Some say it’s because one year is much shorter relative to your age when you’re 40 than when you’re 10.

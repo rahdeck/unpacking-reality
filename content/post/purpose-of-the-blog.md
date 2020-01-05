@@ -1,6 +1,6 @@
 ---
 title: "Purpose of the blog"
-published: 2016-06-15T03:48:00-07:00
+published: 2016-03-28T00:00:00-07:00
 author: "rahdeck"
 ---
 Some of the things I hope to get out of writing this are:

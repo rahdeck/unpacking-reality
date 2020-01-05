@@ -1,6 +1,6 @@
 ---
 title: "Slow societal change"
-published: 2016-06-15T04:06:00.001000-07:00
+published: 2016-04-04T00:00:00-07:00
 author: "rahdeck"
 ---
 Going with the flow today and writing yet another entry!

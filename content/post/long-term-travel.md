@@ -1,6 +1,6 @@
 ---
 title: "Long-term travel"
-published: 2016-06-15T03:54:00.002000-07:00
+published: 2016-04-01T00:00:00-07:00
 author: "rahdeck"
 ---
 Let’s talk travel!

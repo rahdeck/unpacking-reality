@@ -1,6 +1,6 @@
 ---
 title: "A few tips on selling on cragslist"
-published: 2016-06-15T03:56:00.002000-07:00
+published: 2016-04-03T00:00:00-07:00
 author: "rahdeck"
 ---
 Ooops, there was a gap yesterday in my writing. To my defense I might add that it was a pretty busy day, spent mostly packing up and cleaning the house. I’ve been selling our household appliances through Craigslist recently and have had a few thoughts around it.
