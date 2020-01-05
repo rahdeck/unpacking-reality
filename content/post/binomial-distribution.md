@@ -3,6 +3,9 @@ title: "Binomial distribution"
 published: 2019-07-26T02:47:00.001000-07:00
 author: "rahdeck"
 ---
+[![](/images/thumbnails/2019-07-26-binomial-distribution-bin_scaled.png)](/images/2019-07-26-binomial-distribution-bin_scaled.png)
+***Probability of getting exactly *k* 6's in 10 dice throws***
+
 Binomial distribution is a very handy tool to calculate probability of getting *k* successes in *n* trials.
 
 The canonical example is coin tossing, because it's easy and intuitive to define heads as success and tails as failure, with equal probabilities (0.5) in case of a fair coin.
