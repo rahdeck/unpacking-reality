@@ -1,10 +1,8 @@
-+++
-title = "Learning"
-slug = "2016-12-05-learning"
-published = 2016-12-05T03:00:00-08:00
-author = "rahdeck"
-tags = []
-+++
+---
+title: "Learning"
+author: "rahdeck"
+draft: true
+---
 My experiences at learning.  
   
 Examples of mastery learning - very deep subject, multi-faceted.

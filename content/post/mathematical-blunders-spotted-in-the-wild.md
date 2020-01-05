@@ -1,10 +1,8 @@
-+++
-title = "Mathematical blunders spotted in the wild"
-slug = "2018-06-08-mathematical-blunders-spotted-in-the-wild"
-published = 2018-06-08T03:36:00-07:00
-author = "rahdeck"
-tags = []
-+++
+---
+title: "Mathematical blunders spotted in the wild"
+author: "rahdeck"
+draft: true
+---
 For each of those provide anonymized screenshots and short description
 of what was wrong and what is actually correct  
   
@@ -15,4 +13,3 @@ miscalculated
 3. Rick's comment on probability of failures when doing more calls to a
 service (hard to find)  
 4. Haitao's comment on 7! for the number of entries in the cache  
-5.

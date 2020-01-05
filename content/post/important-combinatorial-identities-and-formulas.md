@@ -1,10 +1,8 @@
-+++
-title = "Important combinatorial identities and formulas"
-slug = "2019-07-26-important-combinatorial-identities-and-formulas"
-published = 2019-07-26T01:28:00.002000-07:00
-author = "rahdeck"
-tags = []
-+++
+---
+title: "Important combinatorial identities and formulas"
+author: "rahdeck"
+draft: true
+---
 permutations: \\(P(n) = n!\\)
 
 r-permutations (r-permutation of the n-set, P(n, r)): \\(P(n, r) =

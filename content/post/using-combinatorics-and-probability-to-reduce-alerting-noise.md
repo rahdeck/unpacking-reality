@@ -1,10 +1,8 @@
-+++
-title = "Using combinatorics and probability to reduce alerting noise"
-slug = "2019-07-26-using-combinatorics-and-probability-to-reduce-alerting-noise"
-published = 2019-07-26T01:33:00.002000-07:00
-author = "rahdeck"
-tags = []
-+++
+---
+title: "Using combinatorics and probability to reduce alerting noise"
+author: "rahdeck"
+draft: true
+---
 \[DISCLAIMER: This post is from a few years ago and I'm no longer on the
 same team as when it was written. I was too lazy to modify the whole
 post to use past tense though so it's published in its original present
