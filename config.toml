@@ -6,6 +6,7 @@ author = "Radoslaw Majkut"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+publishDir = "docs"
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
@@ -13,9 +14,6 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [[menu.main]]
     name = "About"
     url = "/about/"
-[[menu.main]]
-    name = "Applied Combinatorics exercise solutions"
-    url = "https://rahdeck.github.io"
 
 [params]
     description = "A personal blog"
