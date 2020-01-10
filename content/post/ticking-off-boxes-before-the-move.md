@@ -1,6 +1,6 @@
 ---
 title: "Ticking off boxes before the move"
-published: 2016-03-31T00:00:00.001000-07:00
+published: 2016-03-31T00:00:00-07:00
 author: "rahdeck"
 ---
 Haven’t had much time to do any sort of introspection on the latest events.
