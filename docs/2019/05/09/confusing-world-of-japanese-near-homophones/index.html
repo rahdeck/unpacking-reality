@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.62.0" />
+
+
+<title>Confusing world of Japanese near-homophones - Harping on about the same old waffle</title>
+<meta property="og:title" content="Confusing world of Japanese near-homophones - Harping on about the same old waffle">
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">Confusing world of Japanese near-homophones</h1>
+
+    
+    <span class="article-date">2019-05-09</span>
+    
+
+    <div class="article-content">
+      <p>I still remember how hard it was (and still is!) to learn to differentiate some Japanese words from each other. There are tons of words in Japanese that sound almost but not exactly the same, differing only subtly by the vowels used in them. I guess you could call them near-homophones (or near identical sounding). Knowing only Indo-European languages, in which it's mostly the consonants that differentiate words from one another, my brain has a hard time adjusting to such amount of very similar words where the only differences are the vowels.</p>
+<p>For example, here's a list of existing Japanese words made up of a &ldquo;k&rdquo; syllable (ka, ki, ku, ke, ko) followed by an &ldquo;r&rdquo; syllable (ra, ri, ru, re, ro) with &ldquo;i&rdquo; appended to the end:</p>
+<ol>
+<li><a href="https://jisho.org/search/%E3%81%8B%E3%82%89%E3%81%84%23word">からい</a> (karai)</li>
+<li><a href="https://jisho.org/search/%E3%81%8B%E3%82%8B%E3%81%84%23word">かるい</a> (karui)</li>
+<li><a href="https://jisho.org/search/%E3%81%8B%E3%82%8C%E3%81%84%23word">かれい</a> (karei)</li>
+<li><a href="https://jisho.org/search/%E3%81%8D%E3%82%89%E3%81%84%23word">きらい</a> (kirai)</li>
+<li><a href="https://jisho.org/search/%E3%81%8D%E3%82%8B%E3%81%84%23word">きるい</a> (kirui)</li>
+<li><a href="https://jisho.org/search/%E3%81%8D%E3%82%8C%E3%81%84%23word">きれい</a> (kirei)</li>
+<li><a href="https://jisho.org/search/%E3%81%8F%E3%82%89%E3%81%84%23word">くらい</a> (kurai)</li>
+<li><a href="https://jisho.org/search/%E3%81%8F%E3%82%8B%E3%81%84%23word">くるい</a> (kurui)</li>
+<li><a href="https://jisho.org/search/%E3%81%8F%E3%82%8C%E3%81%84%23word">くれい</a> (kurei)</li>
+<li><a href="https://jisho.org/search/%E3%81%8F%E3%82%8D%E3%81%84%23word">くろい</a> (kuroi)</li>
+<li><a href="https://jisho.org/search/%E3%81%91%E3%82%89%E3%81%84%23word">けらい</a> (kerai)</li>
+<li><a href="https://jisho.org/search/%E3%81%93%E3%82%89%E3%81%84%23word">こらい</a> (korai)</li>
+<li><a href="https://jisho.org/search/%E3%81%93%E3%82%8B%E3%81%84%23word">こるい</a> (korui)</li>
+<li><a href="https://jisho.org/search/%E3%81%93%E3%82%8C%E3%81%84%23word">これい</a> (korei)</li>
+</ol>
+<p>Some of those words create pairs that are just asking for embarassing mistakes such as &ldquo;kirei&rdquo; (clean, beautiful) and &ldquo;kirai&rdquo; (disgusting, hated, disliked) (which fortunately are very popular so after a while the difference should finally sink in). Such a slip of tongue might be hard to recover from in certain situations, hopefully your audience will be forgiving :-)</p>
+<p>I generated all 20 possible k*r*i words (I excluded all 5 &ldquo;k*rii&rdquo; words as they don't sound like they exist, though I could be wrong) with a simple shell loop and looked them up on jisho.org. Out of the 20 words, 14 turned out to actually exist as listed above. Here's the command I used:</p>
+<pre><code>    for prefix in 'か' 'き' 'く' 'け' 'こ'
+    do
+        for suffix in 'ら' 'る' 'れ' 'ろ'
+        do
+            word=${prefix}${suffix}&quot;い&quot;
+            xdg-open &quot;https://jisho.org/search/${word}%23word&quot;
+        done
+    done
+</code></pre><p>This is just a tip of the iceberg. Japanese is actually full of not &ldquo;just&rdquo; near-homophones but full-on homophones. There are literally thousands of pairs, triplets, quadruplets and higher-cardinality tuples of homophones.</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+

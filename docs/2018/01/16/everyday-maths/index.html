@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.62.0" />
+
+
+<title>Everyday maths - Harping on about the same old waffle</title>
+<meta property="og:title" content="Everyday maths - Harping on about the same old waffle">
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">10 min read</span>
+    
+
+    <h1 class="article-title">Everyday maths</h1>
+
+    
+    <span class="article-date">2018-01-16</span>
+    
+
+    <div class="article-content">
+      <p>If I had an opportunity to take a university course now (though it'd be considered late in life at my age), it'd definitely be related to mathematics.</p>
+<p>Math is just so damn cool and rewarding. I can't believe it's not emphasized more in the educational curriculum, being so practical. There's a lot of rather basic math which is incredibly useful in everyday life. Of course as a software engineer I might be biased towards overestimating its usefulness due to using it at work and I'm definitely biased towards branches of maths I know and use, which of course is a very limited subset of all math. In the past few years I've found the following pieces/branches of math very useful:</p>
+<ul>
+<li>
+<p><strong><a href="https://en.wikipedia.org/wiki/Exponentiation#Identities_and_properties">Laws of exponents</a>.</strong></p>
+<p>Some people cannot multiply exponents with the same bases, even though it's pretty basic math. Even within my own community of software engineers and even when limiting the base to 2 (which is the most common base in computer science) some people have the &ldquo;deer-in-the-headlights&rdquo; look when asked to calculate, say, \(2^{13}\), without realizing it is the same as a much more accessible and solvable \(2^{10} \cdot 2^3 = ~1000 \cdot 8 = ~8,000\). Learning rules of exponents gives you great bang for the buck as it can be used in many techniques, such as approximating (which I'll talk about further below). Even if you have different bases, you can make them roughly same by rounding (which will introduce some error). For example if you need to multiply \(10^3 \cdot 3^5\), you may realize that 10 is close enough to \(3^2\) (which is 9) and you can replace 10 with it so that the multiplication becomes \((3^2)^3 \cdot 3^5 = 3^6 \cdot 3^5 = 3^{11} = 177,147\). Exact calculation would yield 243,000, so it's quite a way off but still the right order of magnitude. This technique may come in handy when you're trying to calculate large numbers (at least larger than what those in the primary school multiplication table) - convert them to exponents with the same base and then simply add the exponents. For example, \(150 \cdot 85\) might be approximated as \(2^7 (150 ~= 128) \cdot 2^7\) (also 128, picking a larger value to compensate for the previous smaller number) \(= 2^{14}\). Exact result is 12,750 and the approximation is 16,384 so only overshot by less than 30%. I'm sure there are more precise and more formal ways of approaching this but it can work for rough approximations.</p>
+</li>
+<li>
+<p><strong><a href="https://en.wikipedia.org/wiki/Combinatorics">Combinatorics</a>.</strong></p>
+<p>This is such an important branch of maths and yet I don't remember any emphasis on it throughout my education and had to re-learn it from scratch as an adult. It's all about counting how many ways there are for something to occur or exist. Many probability problems can be solved with just a combinatorial approach as one of the definitions of probability is the ratio of the number of events we're interested in to the number of all possible events. Counting both of these numbers can quite often be done with combinatorial formulas. An example problem might be: what is the probability that a randomly generated 5-letter password starts with the string &ldquo;pas&rdquo; (let's assume passwords are lowercase)? Well, there are 26 letters in the alphabet, so there number of all possible passwords is \(26^5\). The number of passwords that start with &ldquo;pas&rdquo; is \(26^2\) (there are only 2 letters to fill) , so the probability is \(\frac{26^2}{26^5} = \frac{1}{26^3}\), or 0.005%. To give a real life example, I used combinatorics to calculate how many unique 3-character passwords might be generated from my bank's code card (and learnt that I will never have to ask for a replacement card during my lifetime, so huge was the number).</p>
+</li>
+<li>
+<p><strong>Probability</strong></p>
+<p>Especially binomial coefficients and binomial distribution which are stemming from the idea of <strong><a href="https://en.wikipedia.org/wiki/Bernoulli_trial">Bernoulli trials</a></strong></p>
+</li>
+<li>
+<p><strong>Statistics</strong></p>
+<p>Understanding of basic stats such as measures of centrality (arithmetic average or mean, median), percentiles, probability distributions, etc.</p>
+</li>
+</ul>
+<p>Playing around with graphs of functions is a very entertaining way of learning math, you get to create some spectacular graphs by tweaking and modifying functions and plotting the results. This way you can sort of viscerally learn about behaviour of trigonometric and other types of functions (I mostly played with trig functions as they're periodic). Here are a faux McDonald's logo I created while messing around with functions graphs:</p>
+<ul>
+<li>
+<p><a href="/images/2018-01-16-everyday-maths-mcdonals_logo.png"><img src="/images/thumbnails/2018-01-16-everyday-maths-mcdonals_logo.png" alt=""></a></p>
+<p>While not a perfect imitation, it does resemble the &ldquo;Golden Arches&rdquo; of McDonald's. It was made with very simple manipulations of the sine function. The input (X-axis) to the function is some points from 0 to 2<!-- raw HTML omitted -->π<!-- raw HTML omitted --> so that we get a single period of the sine function. Then the two &ldquo;hills&rdquo; (<a href="http://www.bbc.co.uk/worldservice/specials/1616_fastfood/page6.shtml">some argued that they were meant to invoke the image of motherly breasts</a>, but it's a bit of a stretch for me) are made by using the absolute value of sine, so whatever is below 0 on Y-axis gets &ldquo;rotated around&rdquo; to be above the Y-axis. Then, to move the sharp cusp that join the arches up a bit, we add a flattened and spread out version of sine wave, with \(\frac{1}{8}\)th of the amplitude and twice the period of the original sine function, so that it has its peak at the joint, i.e. \(y = \frac{sin(\frac{x}{2})}{8}\). The final graph is made by adding those two functions together, \(y = sin(x) + \frac{sin(\frac{x}{2})}{8}\).<!-- raw HTML omitted --></p>
+</li>
+</ul>
+<p>Here are some more graphs I created in 30 minutes of playing with graphing software:</p>
+<ul>
+<li>
+<p>Obstacle course (used imaginary unit to alternate between 1, 0 and -1)</p>
+<p><a href="/images/2018-01-16-everyday-maths-complex_small.png"><img src="/images/thumbnails/2018-01-16-everyday-maths-complex_small.png" alt=""></a></p>
+</li>
+<li>
+<p>Fishy</p>
+<p><a href="/images/2018-01-16-everyday-maths-fishlike_small.png"><img src="/images/thumbnails/2018-01-16-everyday-maths-fishlike_small.png" alt=""></a></p>
+</li>
+<li>
+<p>Step-down</p>
+<p><a href="/images/2018-01-16-everyday-maths-geometric_down_small.png"><img src="/images/thumbnails/2018-01-16-everyday-maths-geometric_down_small.png" alt=""></a></p>
+</li>
+<li>
+<p>Step-up</p>
+<p><a href="/images/2018-01-16-everyday-maths-geometric_small.png"><img src="/images/thumbnails/2018-01-16-everyday-maths-geometric_small.png" alt=""></a></p>
+</li>
+<li>
+<p>Getting louder (slow ramp-up)</p>
+<p><a href="/images/2018-01-16-everyday-maths-getting_louder_small.png"><img src="/images/thumbnails/2018-01-16-everyday-maths-getting_louder_small.png" alt=""></a></p>
+</li>
+<li>
+<p>Getting quieter (fast drop-off)</p>
+<p><a href="/images/2018-01-16-everyday-maths-getting_quiet_fast_small.png"><img src="/images/thumbnails/2018-01-16-everyday-maths-getting_quiet_fast_small.png" alt=""></a></p>
+</li>
+<li>
+<p>Peaky</p>
+<p><a href="/images/2018-01-16-everyday-maths-peaky_small.png"><img src="/images/thumbnails/2018-01-16-everyday-maths-peaky_small.png" alt=""></a></p>
+</li>
+<li>
+<p>Molars</p>
+<p><a href="/images/2018-01-16-everyday-maths-teeth_small.png"><img src="/images/thumbnails/2018-01-16-everyday-maths-teeth_small.png" alt=""></a></p>
+</li>
+<li>
+<p>Grassy hills</p>
+<p><a href="/images/2018-01-16-everyday-maths-less_fuzzy_small.png"><img src="/images/thumbnails/2018-01-16-everyday-maths-less_fuzzy_small.png" alt=""></a></p>
+</li>
+<li>
+<p>Overgrown hills (actually same base frequency as the previous graph which kinda still shows through + lots of noise)</p>
+<p><a href="/images/2018-01-16-everyday-maths-very_fuzzy_small.png"><img src="/images/thumbnails/2018-01-16-everyday-maths-very_fuzzy_small.png" alt=""></a></p>
+</li>
+<li>
+<p>Noise (normal distribution)</p>
+<p><a href="/images/2018-01-16-everyday-maths-random_noise_small.png"><img src="/images/thumbnails/2018-01-16-everyday-maths-random_noise_small.png" alt=""></a></p>
+</li>
+</ul>
+<p>The point is not to create a specific graph but to play around, get the feel for the numbers and learn how to manipulate functions to achieve some effect. Nothing particularly scientific but lots of fun nonetheless!</p>
+<p>All these math skills I listed above are useful and interesting but in everyday life other skills that are even more applicable are <em><strong>approximation</strong></em> and <em><strong>estimation</strong></em>.</p>
+<h3 id="approximation">Approximation</h3>
+<p>Approximation is unfortunately not really taught in schools. It requires that you don't fixate on getting the absolutely correct (in a precise mathematical sense) answer which may be hard to obtain or actually meaningless (e.g. due to inherent errors in physical measurements) but instead simplify the calculations and get a rough but still good enough answer. We unconsciously do it every day in non-mathematical contexts but often freeze and give up when asked a question that sounds like it requires an exact answer, even though an approximate answer would often do.</p>
+<p>Similarly to the example with exponents above, if I get asked how much is \(2^{20}\), I would say it's roughly a million (\(2^{10} \cdot 2^{10} = \sim1,000 \cdot \sim1,000 = 1,000,000\) (or equivalently \(\sim10^3 \cdot \sim10^3 = 10^6\)), unless I need to know exactly how much it is in which case I'd use software to calculate it, I would never think of doing it by hand anymore these days.</p>
+<p>It usually doesn't take me more than 2-3 seconds to know answer to base 2 exponentiation problems, because I know the rules of exponents and I know the values of powers of 2 up to the tenth power.</p>
+<p>In a way, this means that a lot of math skills I was taught at primary school such as long multiplication or division are no longer useful in today's world where you have powerful software all around you at all times (e.g. your smartphone). I think it would be time much better spent if kids get taught about approximation techniques than slavishly perfect manual calculation algorithms which can be handed off to computers. Spend more time explaining rounding, rules of exponents and logarithms to kids and they'll be much better off in life.</p>
+<h3 id="estimation">Estimation</h3>
+<p>Estimation involves approximation but they're not the same. The way I understand estimation is it's a skill that lets you calculate an unknown quantity by first decomposing it into other, more familiar quantities and then building it up again from those better known numbers.</p>
+<p>Classic examples include estimating how many ping-pong balls can fit into your living room or the weight of a plane.</p>
+<p>Recently (out of boredom) I calculated how long it'll take me to get from the top to the bottom of the mountain on a chairlift. As I was waiting idly with friends at the mountain-top restaurant, I counted the number of chairs in the whole chairlift, that I could see through the restaurant window. Fortunately for me, they were all numbered and 107 was the highest number. So the length of the chairlift was half of that (same number of chairs coming up as coming down) at 54 chairs. Then I counted (in my head only without a watch, like 1.., 2&hellip;, 3&hellip; and so on) how many seconds passed between each chair. It was roughly 10 seconds. So my rough estimate was 54 \(\cdot\) 10 secs = 540 seconds or 9 mins. The actual ride took 11 minutes but the lift stopped a few times on our way down so my estimate was pretty close.</p>
+<p>You may think it's pretty useless to do exercises like that, but I think the more you play with numbers and build your skills and intuition, the easier it gets and the more often you'll apply those skills in your life.</p>
+<h3 id="calibration">Calibration</h3>
+<p>To hone those skills I often calibrate my estimates. For example, on my walk to work I know how long it takes me to walk between certain &ldquo;milestones&rdquo; (such as intersections or buildings) as I timed it a few times when I first started walking there. In my bathroom there's a tiny toothbrush clock which I normally use for timing of brushing teeth (it came with the toothbrush) but I've also used it to time my showers so I know how long they take (13-15 min, longer if I wash my hair), how long my shaving takes, etc.</p>
+<p>Those numbers allow me to be more realistic when planning my schedule for the day. Also since I'm calibrated I can more accurately estimate duration of other activities.</p>
+<p>I also calibrate myself on the prices of things, by tracking our spending and knowing how much we spend for food, entertainment or travel per month or yearly. I've developed a good feel for the prices of groceries, simply by paying attention to them so I know what is and what is not the right price for a grocery item. This has positive consequences for my wallet as I don't tend to overpay for basic items and avoid the temptation to buy items at expensive convenience stores as I can immediately see (without resorting to checking online) when they don't offer competitive prices most of the time.</p>
+<p>In addition to rough calibration it's good to know by heart some of the
+following:</p>
+<ul>
+<li>constants such as unit counts: seconds in a minute, minutes in a hour, hours in a day, minutes in a day (1440), etc.</li>
+<li>geometric formulas such as perimeters and areas of figures, volumes of solids, etc.</li>
+<li>units for physical quantities such speed, acceleration, force, energy, power, etc.</li>
+</ul>
+<p>All those will come in handy many, many times in your whole life if you are even a tiny bit of a quantitative type (and if you're not, you should be for your own good!).</p>
+<p>This posting is meant to show that some basic math is both fun and very useful. It's never too late to discover math for yourself, even, or maybe particularly so, if you've never really enjoyed it or had bad memories from your education (doing menial calculations instead of having fun). There are tons of math resources on the web that are easy to follow and make the learning process much more interesting. I enjoy betterexplained.com; Khan Academy is also probably very good, there are also lots of MOOCs that usually target a more specific area of math.</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+

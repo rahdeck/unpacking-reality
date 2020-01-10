@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Harping on about the same old waffle</title>
+    <link>/</link>
+    <description>Recent content on Harping on about the same old waffle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Aug 2019 04:06:00 -0700</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Symbols obscuring the insight</title>
+      <link>/2019/08/05/symbols-obscuring-the-insight/</link>
+      <pubDate>Mon, 05 Aug 2019 04:06:00 -0700</pubDate>
+      
+      <guid>/2019/08/05/symbols-obscuring-the-insight/</guid>
+      <description>Formulas are a succinct way of encapsulating an insight into a symbolic expression. However, I&#39;ve been treating some of them purely for their computational utility, without understanding the underlying insight. I&#39;d plug in the numbers, run the arithmetic within and out would come the result, Sure, that&#39;s one powerful functionality that formulas offer but they also contain the crux of the insight that somebody once had and put into the formula.</description>
+    </item>
+    
+    <item>
+      <title>How many persons have I been?</title>
+      <link>/2019/08/03/how-many-persons-have-i-been/</link>
+      <pubDate>Sat, 03 Aug 2019 19:50:00 -0700</pubDate>
+      
+      <guid>/2019/08/03/how-many-persons-have-i-been/</guid>
+      <description>Sometimes, when I look back at old photos of mine or read an email I wrote ten years ago, I wonder if that was really me in that picture or if it was me who wrote that email. I look at those artifacts and just see somebody else, a guy with a certain mindset and attitude but who&#39;s not the current &amp;ldquo;me&amp;rdquo;. Sometimes what he wrote seems stupid and I wish he hadn&#39;t written it.</description>
+    </item>
+    
+    <item>
+      <title>Binomial distribution</title>
+      <link>/2019/07/26/binomial-distribution/</link>
+      <pubDate>Fri, 26 Jul 2019 02:47:00 -0700</pubDate>
+      
+      <guid>/2019/07/26/binomial-distribution/</guid>
+      <description>Probability of getting exactly k 6&#39;s in 10 dice throws
+Binomial distribution is a very handy tool to calculate probability of getting k successes in n trials.
+The canonical example is coin tossing, because it&#39;s easy and intuitive to define heads as success and tails as failure, with equal probabilities (0.5) in case of a fair coin.
+Another example is dice throws. Here one can be a little more creative with what constitutes success and failure.</description>
+    </item>
+    
+    <item>
+      <title>Confusing world of Japanese near-homophones</title>
+      <link>/2019/05/09/confusing-world-of-japanese-near-homophones/</link>
+      <pubDate>Thu, 09 May 2019 18:08:00 -0700</pubDate>
+      
+      <guid>/2019/05/09/confusing-world-of-japanese-near-homophones/</guid>
+      <description>I still remember how hard it was (and still is!) to learn to differentiate some Japanese words from each other. There are tons of words in Japanese that sound almost but not exactly the same, differing only subtly by the vowels used in them. I guess you could call them near-homophones (or near identical sounding). Knowing only Indo-European languages, in which it&#39;s mostly the consonants that differentiate words from one another, my brain has a hard time adjusting to such amount of very similar words where the only differences are the vowels.</description>
+    </item>
+    
+    <item>
+      <title>New website</title>
+      <link>/2019/02/18/new-website/</link>
+      <pubDate>Mon, 18 Feb 2019 02:26:00 -0800</pubDate>
+      
+      <guid>/2019/02/18/new-website/</guid>
+      <description>It&#39;s been almost a year since my last post! I haven&#39;t stayed idle throughout this time. I managed to:
+ quit my job of 13 years pick up beach volleyball play bridge more regularly  Most importantly, I have created a new website where I publish solutions to problems from a book called &amp;ldquo;Applied Combinatorics 2nd Edition&amp;rdquo; by Barry Tesman and Fred Roberts (available on Amazon.com)
+I recommend the book if you enjoy combinatorics at all!</description>
+    </item>
+    
+    <item>
+      <title>Being in control</title>
+      <link>/2018/05/11/being-in-control/</link>
+      <pubDate>Fri, 11 May 2018 05:38:00 -0700</pubDate>
+      
+      <guid>/2018/05/11/being-in-control/</guid>
+      <description>A long-standing philosophical dilemma: are we controlled by fate or can we control our own destiny?
+I like being in control in most of the areas of my life. Being in control to me is a spectrum that starts at a base level of knowing the current state of my affairs in a given area and peaks at having some amount of real control over them. I accept that I cannot have total control over anything and that various things are controllable to varying degrees (health might be harder to control due to the genetics, while personal finances might be easier).</description>
+    </item>
+    
+    <item>
+      <title>Meta-skills</title>
+      <link>/2018/05/07/meta-skills/</link>
+      <pubDate>Mon, 07 May 2018 04:17:00 -0700</pubDate>
+      
+      <guid>/2018/05/07/meta-skills/</guid>
+      <description>This dragon knows how to stay in a continuous cycle of improvement with his awesome meta-skills! :-)
+Just as important as regular of functional skills, or perhaps even more important, are meta-skills. I&#39;m not sure if there exists a definition of meta-skill out there somewhere. I haven&#39;t looked for it before writing this blog post so chances are I&#39;m somewhat off on either the definition or the actual list of such skills (especially if my definition differs significantly from the most common ones).</description>
+    </item>
+    
+    <item>
+      <title>Managing uncertainty in life</title>
+      <link>/2018/03/26/managing-uncertainty-in-life/</link>
+      <pubDate>Mon, 26 Mar 2018 01:46:00 -0700</pubDate>
+      
+      <guid>/2018/03/26/managing-uncertainty-in-life/</guid>
+      <description>Normal distribution (source: wikipedia.org)
+Just about everything in your life is an event with some probability for a particular outcome. There are not almost any things that are certain.
+Sounds crazy? Consider that even what we ordinarily take as certain in the physical reality around us is not really certain in the probabilistic sense. It may be close to 100% probability but according to modern physics nothing is 100% certain.</description>
+    </item>
+    
+    <item>
+      <title>Everyday maths</title>
+      <link>/2018/01/16/everyday-maths/</link>
+      <pubDate>Tue, 16 Jan 2018 01:10:00 -0800</pubDate>
+      
+      <guid>/2018/01/16/everyday-maths/</guid>
+      <description>If I had an opportunity to take a university course now (though it&#39;d be considered late in life at my age), it&#39;d definitely be related to mathematics.
+Math is just so damn cool and rewarding. I can&#39;t believe it&#39;s not emphasized more in the educational curriculum, being so practical. There&#39;s a lot of rather basic math which is incredibly useful in everyday life. Of course as a software engineer I might be biased towards overestimating its usefulness due to using it at work and I&#39;m definitely biased towards branches of maths I know and use, which of course is a very limited subset of all math.</description>
+    </item>
+    
+    <item>
+      <title>Meet your best friend and your worst enemy</title>
+      <link>/2017/01/23/meet-your-best-friend-and-your-worst-enemy/</link>
+      <pubDate>Mon, 23 Jan 2017 03:28:00 -0800</pubDate>
+      
+      <guid>/2017/01/23/meet-your-best-friend-and-your-worst-enemy/</guid>
+      <description>You are both the light and the darkness but YOU get to choose the proportions
+In other words, look in the mirror and say &amp;ldquo;hi&amp;rdquo;. How come you can be in those two roles? Aren&#39;t you simply your best friend? Why would you be your own worst enemy too? Let me elaborate.
+My claim is that most of the outcomes in such areas of your life as:
+ finances work hobbies relationships health  are most directly influenced by your own and nobody else&#39;s actions.</description>
+    </item>
+    
+    <item>
+      <title>Pedestrian experience in Sydney</title>
+      <link>/2016/12/17/pedestrian-experience-in-sydney/</link>
+      <pubDate>Sat, 17 Dec 2016 23:29:00 -0800</pubDate>
+      
+      <guid>/2016/12/17/pedestrian-experience-in-sydney/</guid>
+      <description>Walking in Sydney is quite stressful and definitely not as easy or pleasant as in Tokyo. Motorized traffic in Sydney is visibly more accommodated for than pedestrian traffic in most situations, which is the reverse of Tokyo where pedestrians, being the most vulnerable, are given the highest priority. There are a lot of figurative but also quite literal obstacles awaiting pedestrians in Sydney. Below is a list of some of them along with ideas for improvement.</description>
+    </item>
+    
+    <item>
+      <title>Value of immediacy</title>
+      <link>/2016/12/13/value-of-immediacy/</link>
+      <pubDate>Tue, 13 Dec 2016 01:48:00 -0800</pubDate>
+      
+      <guid>/2016/12/13/value-of-immediacy/</guid>
+      <description>How many times have you deferred doing something inevitable?
+All of us have been guilty of it to a varying degree. The excuses we come up with are usually pretty transparent: it&#39;s our laziness, luster of instant gratification and other human vices showing through. &amp;ldquo;I&#39;ll do the dishes later, I wanna watch my favourite TV show first&amp;rdquo;, &amp;ldquo;I&#39;ll pack my lunch in the morning, I&#39;m too tired today&amp;rdquo;, etc. I&#39;m guilty of this many times a day but I have been getting better at recognizing it for what it is (my own laziness) and sometimes forcing myself to do the right thing, that is, doing something straight away rather than deferring it.</description>
+    </item>
+    
+    <item>
+      <title>Sydney quality of life - summary</title>
+      <link>/2016/10/05/sydney-quality-of-life-summary/</link>
+      <pubDate>Wed, 05 Oct 2016 03:08:00 -0700</pubDate>
+      
+      <guid>/2016/10/05/sydney-quality-of-life-summary/</guid>
+      <description>We moved to Sydney around 4 months ago so it&#39;s time for the &amp;ldquo;first impressions&amp;rdquo; kind of post with some thought on quality of life here.
+A little of the back story for context might be due first: we lived in Dublin, Ireland for 5 years, then in Tokyo, Japan for another 5 years and then moved to Sydney in 2016. My observations are going to be colored through the lens of living in those other cities so don&#39;t expect an impartial data-driven analysis but rather a very subjective comparison.</description>
+    </item>
+    
+    <item>
+      <title>Making it</title>
+      <link>/2016/09/10/making-it/</link>
+      <pubDate>Sat, 10 Sep 2016 01:42:00 -0700</pubDate>
+      
+      <guid>/2016/09/10/making-it/</guid>
+      <description>Have you &amp;ldquo;made it&amp;rdquo; yet? What does that mean to you? To me that question is synonymous with: &amp;ldquo;have you achieved what you wanted to?&amp;rdquo; or &amp;ldquo;are you happy with your life?&amp;quot;.
+I know I&#39;ve definitely made it. I am married to the person I love. I&#39;m healthy. All my life I&#39;ve lived in first world countries (some may argue that Poland is not exactly a first-world country, but its big cities definitely are, certain areas may be a bit less fancy but they&#39;re not third world quality either.</description>
+    </item>
+    
+    <item>
+      <title>Relaxing with randomness</title>
+      <link>/2016/08/03/relaxing-with-randomness/</link>
+      <pubDate>Wed, 03 Aug 2016 05:37:00 -0700</pubDate>
+      
+      <guid>/2016/08/03/relaxing-with-randomness/</guid>
+      <description>Randomness abound in nature!
+Who doesn&#39;t like looking at ocean waves, a flowing river, a burning fire or tree leaves moving in the wind? I bet you have spent some time looking at one of those things for longer than you thought, sweetly idling away.I know I love looking at them and other similar phenomena such as falling snow flakes or patterns of rain drops in the puddles.
+The keyword here is patterns.</description>
+    </item>
+    
+    <item>
+      <title>University of &#39;Moving Around&#39;</title>
+      <link>/2016/07/11/university-of-moving-around/</link>
+      <pubDate>Mon, 11 Jul 2016 03:46:00 -0700</pubDate>
+      
+      <guid>/2016/07/11/university-of-moving-around/</guid>
+      <description>International moves we&#39;ve made so far
+It may not be a perfect analogy but living in multiple countries might be compared to taking multiple majors in university. The main differences from a real university are:
+ Tuition. Not only is it free but you get paid to work there (in most cases). Time to graduate. Make it as short or as long as you like. Quit early if it&#39;s not your cup of tea or live there until YOU (and not the university administration) feel like you&#39;ve mastered it, you&#39;re not limited to 4 years.</description>
+    </item>
+    
+    <item>
+      <title>Is eating out a good value proposition?</title>
+      <link>/2016/06/18/is-eating-out-a-good-value-proposition/</link>
+      <pubDate>Sat, 18 Jun 2016 22:35:00 -0700</pubDate>
+      
+      <guid>/2016/06/18/is-eating-out-a-good-value-proposition/</guid>
+      <description>We went to an &amp;ldquo;upscale&amp;rdquo; restaurant with friends yesterday. We don&#39;t eat out often (maybe a few times a year) so spending $100 AUD for the two of us didn&#39;t do a lot of damage to our finances, however I couldn&#39;t help but notice again how little value you get for your money when eating out in a restaurant. Obviously cheap food joints offer much better value and cooking food yourself is still better.</description>
+    </item>
+    
+    <item>
+      <title>Livability of Japanese cities</title>
+      <link>/2016/05/17/livability-of-japanese-cities/</link>
+      <pubDate>Tue, 17 May 2016 00:00:00 -0700</pubDate>
+      
+      <guid>/2016/05/17/livability-of-japanese-cities/</guid>
+      <description>Moving outside of Japan made me realize just how livable the place is. Its livability is totally hidden from outsiders whose only impressions about Japan are made based on movies or comic books. When I tell friends that Sydney is MUCH louder than Tokyo they are invariably surprised. That’s because their image of Tokyo is based on media’s representation of it, and not on their own actual experience of it. Unfortunately, lack of noise is not transpiring through media flash news or snapshots of Tokyo’s skyline.</description>
+    </item>
+    
+    <item>
+      <title>Differences between Japan and Australia</title>
+      <link>/2016/04/19/differences-between-japan-and-australia/</link>
+      <pubDate>Tue, 19 Apr 2016 00:00:00 -0700</pubDate>
+      
+      <guid>/2016/04/19/differences-between-japan-and-australia/</guid>
+      <description>Missed the whole ten days of entries, will be hard to make up for it. Anyway, today’s piece is on differences between Japan and Australia, or, more specifically, Tokyo and Sydney. The two biggest ones that are immediately felt with your senses are noise and smell.
+Sydney is much louder than Tokyo, mostly due to much denser and louder traffic. In Tokyo most of the heavy traffic passes on elevated roads so you don’t hear it at all at pedestrian level.</description>
+    </item>
+    
+    <item>
+      <title>Saying goodbye to Japan and arriving in AU </title>
+      <link>/2016/04/09/saying-goodbye-to-japan-and-arriving-in-au/</link>
+      <pubDate>Sat, 09 Apr 2016 00:00:00 -0700</pubDate>
+      
+      <guid>/2016/04/09/saying-goodbye-to-japan-and-arriving-in-au/</guid>
+      <description>The missing entries in the past 3 days were due to our moving between continents and lack of PC to write on. I had to return my work laptop to IT in Japan and will pick up a new one soon here in Australia.
+We have arrived today, quite tired after an 9h overnight flight, though not the longest we have been on this year. We will be staying for 30 nights in a serviced apartment with all the amenities such as fully equipped kitchen, laundry room and even access to gym, pool and sauna, which is a great perk.</description>
+    </item>
+    
+    <item>
+      <title>Age and perception of time</title>
+      <link>/2016/04/05/age-and-perception-of-time/</link>
+      <pubDate>Tue, 05 Apr 2016 00:00:00 -0700</pubDate>
+      
+      <guid>/2016/04/05/age-and-perception-of-time/</guid>
+      <description>How aging affects your perception of time! It’s a well known phenomenon that years seem to go by faster as you get older. Some say it’s because one year is much shorter relative to your age when you’re 40 than when you’re 10.
+Let me offer my take on this.
+When you’re 5 or 10 you discover a lot of new things every day, you learn a lot, your brain is absorbing a lot of new information all the time.</description>
+    </item>
+    
+    <item>
+      <title>Gut feelings and not following the herd</title>
+      <link>/2016/04/04/gut-feelings-and-not-following-the-herd/</link>
+      <pubDate>Mon, 04 Apr 2016 00:00:00 -0700</pubDate>
+      
+      <guid>/2016/04/04/gut-feelings-and-not-following-the-herd/</guid>
+      <description>Today’s topic is hard to write down in a cohesive manner, maybe because it still lacks clarity in my mind. So the deal is: sometimes I have those gut feelings or opinions on something that I cannot clearly argument or justify, but I know deep down they are right for my circumstance. To make matters worse those gut feelings also tend to go against the popular or mass-media opinions or social pressure so it’s all the harder to argue for them publicly.</description>
+    </item>
+    
+    <item>
+      <title>Slow societal change</title>
+      <link>/2016/04/04/slow-societal-change/</link>
+      <pubDate>Mon, 04 Apr 2016 00:00:00 -0700</pubDate>
+      
+      <guid>/2016/04/04/slow-societal-change/</guid>
+      <description>Going with the flow today and writing yet another entry!
+Slow change in societies is what’s been on my mind quite often lately. Examples: we’ve had Internet, advanced online security and online systems that can do millions of transactions per minute for 20 years now, yet we’re still going to elections or referendums on our feet. Most people in developed countries have access to Internet so lack of access is not an excuse anymore, and if you really are off the grid, there might always be an option to cast old-style ballots but it should not be the only one, this day and age.</description>
+    </item>
+    
+    <item>
+      <title>A few tips on selling on cragslist</title>
+      <link>/2016/04/03/a-few-tips-on-selling-on-cragslist/</link>
+      <pubDate>Sun, 03 Apr 2016 00:00:00 -0700</pubDate>
+      
+      <guid>/2016/04/03/a-few-tips-on-selling-on-cragslist/</guid>
+      <description>Ooops, there was a gap yesterday in my writing. To my defense I might add that it was a pretty busy day, spent mostly packing up and cleaning the house. I’ve been selling our household appliances through Craigslist recently and have had a few thoughts around it.
+ Sell items on a first-come-first-served basis. This avoids late cancellations, etc. It’s hard to believe in 2016 but there still is no good system for transferring money fast between individuals!</description>
+    </item>
+    
+    <item>
+      <title>Long-term travel</title>
+      <link>/2016/04/01/long-term-travel/</link>
+      <pubDate>Fri, 01 Apr 2016 00:00:00 -0700</pubDate>
+      
+      <guid>/2016/04/01/long-term-travel/</guid>
+      <description>Let’s talk travel!
+Last year I was invited on stage in Poland to talk about my travel experiences. This 30-min discussion was with a great friend of mine, Marek, who also spoke about his own travel experiences. My leitmotif was that I get to travel through my work though it’s not exactly what many people think of as travel.
+The average person equates travel with time away from work, anything from a few days to a few weeks’ worth of time off, usually in an exotic destination.</description>
+    </item>
+    
+    <item>
+      <title>Ticking off boxes before the move</title>
+      <link>/2016/03/31/ticking-off-boxes-before-the-move/</link>
+      <pubDate>Thu, 31 Mar 2016 00:00:00 -0700</pubDate>
+      
+      <guid>/2016/03/31/ticking-off-boxes-before-the-move/</guid>
+      <description>Haven’t had much time to do any sort of introspection on the latest events.
+Today has been seriously busy, I spent at least 3 hours on various calls (work related and outside work) and talked to a lot of people. Also visited the local ward office to notify them of us leaving Japan. So I’ve got a lot done i.e. I ticked off a lot of boxes but those were mostly quite menial tasks.</description>
+    </item>
+    
+    <item>
+      <title>The stress of moving</title>
+      <link>/2016/03/30/the-stress-of-moving/</link>
+      <pubDate>Wed, 30 Mar 2016 00:00:00 -0700</pubDate>
+      
+      <guid>/2016/03/30/the-stress-of-moving/</guid>
+      <description>Moving across continents, that is.
+Things are getting hectic with the upcoming move to Australia. I feel like I’m not entirely in control of what’s going on and a bit stressed by the amount of things to juggle concurrently.
+Moving across countries and/or continents has so far always been a stressful affair to me, not matter how well organized it is. It’s just the nature of change and unpredictability that puts me into this slight unease, must be something about my personality.</description>
+    </item>
+    
+    <item>
+      <title>Question your habits</title>
+      <link>/2016/03/29/question-your-habits/</link>
+      <pubDate>Tue, 29 Mar 2016 00:00:00 -0700</pubDate>
+      
+      <guid>/2016/03/29/question-your-habits/</guid>
+      <description>So it’s the next beautiful morning here in Tokyo.
+I’ve been doing a fair amount of reading on Elon Musk and his businesses and ideas, pretty inspiring stuff. Though I don’t think I’m very entrepreneurial myself this still managed to light up some fire inside me and make me think of all the great things out there to be done and question a lot of existing practices, businesses, processes, etc. Funny how people get stuck in a rut and fail to see outside the box.</description>
+    </item>
+    
+    <item>
+      <title>Purpose of the blog</title>
+      <link>/2016/03/28/purpose-of-the-blog/</link>
+      <pubDate>Mon, 28 Mar 2016 00:00:00 -0700</pubDate>
+      
+      <guid>/2016/03/28/purpose-of-the-blog/</guid>
+      <description>Some of the things I hope to get out of writing this are:
+ Measure how many words I can produce in 5 minutes. See how this changes the longer I write the journal Improve the clarity of my writing while maintaining the output volume Learn English better Build discipline that will transfer to other areas of my life  Right now I’m struggling with the small output volume as 5 minutes does not seem like enough time to write anything substantial.</description>
+    </item>
+    
+    <item>
+      <title>Starting the blogging journey</title>
+      <link>/2016/03/27/starting-the-blogging-journey/</link>
+      <pubDate>Sun, 27 Mar 2016 00:00:00 -0700</pubDate>
+      
+      <guid>/2016/03/27/starting-the-blogging-journey/</guid>
+      <description>Writing a personal journal (or a blog) has been on my mind for a few years but I haven’t had enough motivation to do it with any sort of regularity. I wrote a blog before but it had only a couple of entries in total. A personal journal might be easier to write than a public blog because I don’t need to think about anything that might concern external readers: this is only for me to see whether I can discover any interesting insights about myself.</description>
+    </item>
+    
+    <item>
+      <title>About this blog</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>This is a personal blog with musings on personal finance, health, livability, psychology, mathematics and personal development. Beware: I rehash most of the topics frequently. Served with a solid dose of introspection.</description>
+    </item>
+    
+  </channel>
+</rss>
