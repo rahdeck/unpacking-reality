@@ -1,4 +1,5 @@
 baseurl = "https://rahdeck.github.io/unpacking-reality/"
+canonifyURLs = "true"
 languageCode = "en-us"
 title = "Harping on about the same old waffle"
 theme = "hugo-lithium"
