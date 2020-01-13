@@ -4,10 +4,10 @@ languageCode = "en-us"
 title = "Harping on about the same old waffle"
 theme = "hugo-lithium"
 author = "Radoslaw Majkut"
-googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 publishDir = "docs"
+googleAnalytics = "UA-156129554-1"
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
