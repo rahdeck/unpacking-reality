@@ -6,10 +6,20 @@
     <description>Recent content on Harping on about the same old waffle</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Aug 2019 04:06:00 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 26 Feb 2020 19:51:00 +1100</lastBuildDate>
     
 	<atom:link href="https://rahdeck.github.io/unpacking-reality/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Counting the number of distinct balanced teams</title>
+      <link>https://rahdeck.github.io/unpacking-reality/2020/02/26/counting-the-number-of-distinct-balanced-teams/</link>
+      <pubDate>Wed, 26 Feb 2020 19:51:00 +1100</pubDate>
+      
+      <guid>https://rahdeck.github.io/unpacking-reality/2020/02/26/counting-the-number-of-distinct-balanced-teams/</guid>
+      <description>One of my favorite weekend activities is playing beach volleyball. The number of players who show up is variable, from the prescribed 4 up to 9 or 10 in extreme rare cases. For every set we play, we try to mix people up between teams to keep the game more interesting. That naturally led me to thinking how many balanced teams can $n$ players form.
+If $n$ is even, the reasoning goes as follows: we pick $\frac{n}{2}$ from the total $n$ players in $\binom{n}{\frac{n}{2}}$ ways.</description>
+    </item>
     
     <item>
       <title>Symbols obscuring the insight</title>
