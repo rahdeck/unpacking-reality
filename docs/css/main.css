@@ -12,6 +12,21 @@ body {
   -moz-font-feature-settings: "liga" on;
 }
 
+table {
+    width: 70%;
+}
+
+table, tbody, thead, th, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    width: 50%;
+}
+
 h1,
 h2,
 h3,

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.62.0" />
+
+
+<title>Counting the number of distinct balanced teams - Harping on about the same old waffle</title>
+<meta property="og:title" content="Counting the number of distinct balanced teams - Harping on about the same old waffle">
+
+
+  <link href='https://rahdeck.github.io/unpacking-reality/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://rahdeck.github.io/unpacking-reality/css/fonts.css" media="all">
+<link rel="stylesheet" href="https://rahdeck.github.io/unpacking-reality/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="https://rahdeck.github.io/unpacking-reality/" class="nav-logo">
+    <img src="https://rahdeck.github.io/unpacking-reality/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://rahdeck.github.io/unpacking-reality/about/">About</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">5 min read</span>
+    
+
+    <h1 class="article-title">Counting the number of distinct balanced teams</h1>
+
+    
+    <span class="article-date">2020-02-26</span>
+    
+
+    <div class="article-content">
+      <p>One of my favorite weekend activities is playing beach volleyball. The number of players who show up is variable, from the prescribed 4 up to 9 or 10 in extreme rare cases. For every set we play, we try to mix people up between teams to keep the game more interesting.  That naturally led me to thinking how many balanced teams can <code>$n$</code> players form.</p>
+<p>If <code>$n$</code> is even, the reasoning goes as follows: we pick <code>$\frac{n}{2}$</code> from the total <code>$n$</code> players in <code>$\binom{n}{\frac{n}{2}}$</code> ways. However this leads to double counting. Let me illustrate.</p>
+<p>Let's assume we have 6 players: <code>$\left\{A,B,C,D,E,F\right\}$</code>. When we pick 3 random players from this set, say <code>$\left\{A,C,E\right\}$</code>, this leaves players <code>$\left\{B,D,F\right\}$</code> for the second team. Then later, as part of the <code>$\binom{n}{\frac{n}{2}}$</code> number of ways, we pick <code>$\left\{B,D,F\right\}$</code> for the first team and <code>$\left\{A,C,E\right\}$</code> are left for the second teams. But those two teams are identical to the previous choice! In this way we have double-counted this particular split of players into teams. To fix that, we need to divide by two. Hopefully this is clear.</p>
+<p>How do we tackle a case where <code>$n$</code> is an odd number? Obviously we cannot get equally-size teams. We will therefore allow one team to have one player more than the other and consider this a balanced split but reject splits with larger differences in player counts and not count them here. Let's illustrate this scenario with a group of 5 available players: <code>$\left\{A,B,C,D,E\right\}$</code>. We can split those 5 players into teams of size 3 and 2. This can be evidently done in <code>$\binom{5}{2}$</code> or, equivalently due to binomial symmetry, <code>$\binom{5}{3}$</code> ways. However, the difference from the previous case with an even number of players is that we don't need to divide by 2. Why?  When we pick two players for the first team, the three remaining players are left for the second team, say we split the teams into <code>$\left\{A,B\right\}$</code> and <code>$\left\{C,D,E\right\}$</code>. As you can see there is no way we can pick two players out of five to get the second team, which was the case in the &ldquo;even&rdquo; scenario. So we have no double counting here and don't need to account for it.</p>
+<p>That leaves us with a bit of a conundrum: how do we reconcile the two different cases into one formula where you can plug in <code>$n$</code> and get the result? Let's see if listing the first few numbers for <code>$n$</code> total players (discarding 0 and 1 as not interesting) and the number of ways to split them into teams can enlighten us.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Players</th>
+<th align="center">Teams</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">2</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">35</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">35</td>
+</tr>
+</tbody>
+</table>
+<p>We immediately notice that when the total number of players is even, the number of possible teams is the same as for the <code>$n-1$</code> players, which is the &ldquo;odd&rdquo; case. Now we're ready to start thinking about the shape of the formula that would capture this behaviour.</p>
+<p>The numerator should be the number of ways to pick <code>$\frac{n}{2}$</code> elements from <code>$n$</code> and since we need to account for odd total number of players let's appply a floor() function to the fraction to ensure an integer result: <code>$\binom{n}{\lfloor{n/2}\rfloor}$</code>. This would yield the following values for the first few <code>$n$</code>:</p>
+<table>
+<thead>
+<tr>
+<th align="center">n</th>
+<th align="center">numerator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">2</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">20</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">35</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">70</td>
+</tr>
+</tbody>
+</table>
+<p>So now what's left to figure out is how to build a denominator that will halve the numerator when <code>$n$</code> is even and leave it as-is when <code>$n$</code> is odd, basically a function that spits out 1 when input is odd and 2 when input is even (we can assume only natural numbers will be fed into this function). The function should produce a pattern of 1, 2, 1, &hellip;, 2, 1, 2 forever. Sounds like modulo function should be helpful here. The problem is, if we do <code>$n \bmod{2}$</code> then it will produce a pattern of 1, 0, 1, 0, etc. So we need to add 1 to its result, <code>$(n \bmod{2}) + 1$</code> and then we get 2, 1, 2, 1, etc. There's only one little problem remaining: the function is &ldquo;out of phase&rdquo; as it starts off with 2 but we want it to start with 1. To sync it, we can add 1 to <code>$n$</code> itself and come up with a final function of <code>$((n + 1) \bmod{2}) + 1$</code> for the denominator.</p>
+<p>The whole function in its full glory:</p>
+<p><code>$$f(n) = \frac{\binom{n}{\lfloor{n/2}\rfloor}}{((n + 1) \bmod{2}) + 1)}$$</code></p>
+<p>Here are the results for <code>$n$</code> ranging from 2 to 20:</p>
+<table>
+<thead>
+<tr>
+<th align="center">n</th>
+<th align="center">teams</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">2</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">35</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">35</td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">126</td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td align="center">126</td>
+</tr>
+<tr>
+<td align="center">11</td>
+<td align="center">462</td>
+</tr>
+<tr>
+<td align="center">12</td>
+<td align="center">462</td>
+</tr>
+<tr>
+<td align="center">13</td>
+<td align="center">1716</td>
+</tr>
+<tr>
+<td align="center">14</td>
+<td align="center">1716</td>
+</tr>
+<tr>
+<td align="center">15</td>
+<td align="center">6435</td>
+</tr>
+<tr>
+<td align="center">16</td>
+<td align="center">6435</td>
+</tr>
+<tr>
+<td align="center">17</td>
+<td align="center">24310</td>
+</tr>
+<tr>
+<td align="center">18</td>
+<td align="center">24310</td>
+</tr>
+<tr>
+<td align="center">19</td>
+<td align="center">92378</td>
+</tr>
+<tr>
+<td align="center">20</td>
+<td align="center">92378</td>
+</tr>
+</tbody>
+</table>
+<p>This sequence can be found at <a href="https://oeis.org/A128015">https://oeis.org/A128015</a> where it is described as &ldquo;Binomial coefficients C(2n+1,n) repeated&rdquo;. So it turns out all this was a long-winded way to do something that might be defined in a different way altogether. I hope this post was instructive and interesting in its own way too.</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://rahdeck.github.io/unpacking-reality/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="https://rahdeck.github.io/unpacking-reality/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script src="https://rahdeck.github.io/unpacking-reality/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-156129554-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  </body>
+</html>
+
