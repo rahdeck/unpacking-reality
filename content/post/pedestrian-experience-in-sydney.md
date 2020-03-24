@@ -46,7 +46,7 @@ Walking in Sydney is quite stressful and definitely not as easy or pleasant as i
 
 1. **No countdown indicator for pedestrians.**
 
-   In Tokyo each (and there are many many more than in Sydney) pedestrian light has a visual indicator (a sectioned bar or a countdown timer) of how soon the cycle will switch. In Sydney I haven't seen those at all.
+   In Tokyo each (and there are many, many more than in Sydney) pedestrian light has a visual indicator (a sectioned bar or a countdown timer) of how soon the cycle will switch. In Sydney I haven't seen those at all.
    
    Fix: again, a rather easy and obvious improvement.
 

@@ -123,7 +123,7 @@ would alarming on two consecutive failures of a specific build affect
 the probabilities of getting an alert?  
   
 Let's use the values given in the first example, P(failure) = 5%, number
-of builds = 5.  How do we model this a a ball and urn problem? This time
+of builds = 5.  How do we model this as a ball and urn problem? This time
 the number of urns is a square of the previous number, we can imagine it
 as a 5x20 grid. Each row represents a specific build and there are two
 balls for it, one for the first build and the second for the second one.

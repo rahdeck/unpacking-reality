@@ -24,7 +24,7 @@ Let's work through an example. Imagine your going to a concert (this is our "eve
 
 1. You wake up earlier than usual so you can come to work early and leave earlier than usual too
 1. You get to work on time (no traffic jams, public transport works, natural elements don't get in the way)
-1. Your boss approves you leaving work early that day and there are are unexpected urgent requests from management that you need to complete on that day
+1. Your boss approves you leaving work early that day and there are no unexpected urgent requests from management that you need to complete on that day
 1. Your trip back home is on time
 1. Your spouse is home on time too, to take care of the kids
 
