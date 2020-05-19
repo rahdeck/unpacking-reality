@@ -148,7 +148,7 @@
 </table>
 <p>So now what's left to figure out is how to build a denominator that will halve the numerator when <code>$n$</code> is even and leave it as-is when <code>$n$</code> is odd, basically a function that spits out 1 when input is odd and 2 when input is even (we can assume only natural numbers will be fed into this function). The function should produce a pattern of 1, 2, 1, &hellip;, 2, 1, 2 forever. Sounds like modulo function should be helpful here. The problem is, if we do <code>$n \bmod{2}$</code> then it will produce a pattern of 1, 0, 1, 0, etc. So we need to add 1 to its result, <code>$(n \bmod{2}) + 1$</code> and then we get 2, 1, 2, 1, etc. There's only one little problem remaining: the function is &ldquo;out of phase&rdquo; as it starts off with 2 but we want it to start with 1. To sync it, we can add 1 to <code>$n$</code> itself and come up with a final function of <code>$((n + 1) \bmod{2}) + 1$</code> for the denominator.</p>
 <p>The whole function in its full glory:</p>
-<p><code>$$f(n) = \frac{\binom{n}{\lfloor{n/2}\rfloor}}{((n + 1) \bmod{2}) + 1)}$$</code></p>
+<p><code>$$f(n) = \frac{\binom{n}{\lfloor{n/2}\rfloor}}{((n + 1) \bmod{2}) + 1}$$</code></p>
 <p>Here are the results for <code>$n$</code> ranging from 2 to 20:</p>
 <table>
 <thead>
