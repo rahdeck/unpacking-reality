@@ -41,7 +41,7 @@ So now what's left to figure out is how to build a denominator that will halve t
 
 The whole function in its full glory:
 
-`$$f(n) = \frac{\binom{n}{\lfloor{n/2}\rfloor}}{((n + 1) \bmod{2}) + 1)}$$`
+`$$f(n) = \frac{\binom{n}{\lfloor{n/2}\rfloor}}{((n + 1) \bmod{2}) + 1}$$`
 
 Here are the results for `$n$` ranging from 2 to 20:
 
