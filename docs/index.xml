@@ -6,10 +6,22 @@
     <description>Recent content on Harping on about the same old waffle</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Feb 2020 19:51:00 +1100</lastBuildDate>
+    <lastBuildDate>Wed, 02 Sep 2020 22:32:00 +1000</lastBuildDate>
     
 	<atom:link href="https://rahdeck.github.io/unpacking-reality/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Beneficiaries of Bernoulli</title>
+      <link>https://rahdeck.github.io/unpacking-reality/2020/09/02/beneficiaries-of-bernoulli/</link>
+      <pubDate>Wed, 02 Sep 2020 22:32:00 +1000</pubDate>
+      
+      <guid>https://rahdeck.github.io/unpacking-reality/2020/09/02/beneficiaries-of-bernoulli/</guid>
+      <description>Jacob Bernoulli
+Recently at work I have given a gentle introduction to combinatorics and probability to my colleagues via a specific application of probability mass function of the binomial distribution.
+It may seem like I&#39;m repeating myself here but this presentation is a much longer exposition to this topic than my older blog entry and includes:
+ A bit of historical background on two important figures in the history of maths: Jacob Bernoulli and Blaise Pascal.</description>
+    </item>
     
     <item>
       <title>Counting the number of distinct balanced teams</title>
