@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.62.0" />
+
+
+<title>Revelations of set theory - Harping on about the same old waffle</title>
+<meta property="og:title" content="Revelations of set theory - Harping on about the same old waffle">
+
+
+  <link href='https://rahdeck.github.io/unpacking-reality/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://rahdeck.github.io/unpacking-reality/css/fonts.css" media="all">
+<link rel="stylesheet" href="https://rahdeck.github.io/unpacking-reality/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="https://rahdeck.github.io/unpacking-reality/" class="nav-logo">
+    <img src="https://rahdeck.github.io/unpacking-reality/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://rahdeck.github.io/unpacking-reality/about/">About</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">9 min read</span>
+    
+
+    <h1 class="article-title">Revelations of set theory</h1>
+
+    
+    <span class="article-date">2021-04-26</span>
+    
+
+    <div class="article-content">
+      <p>When reading math books, sets jump at you from every corner (well, every page). A lot of mathematical concepts are expressed in terms of sets or operations on sets (functions, relations). Set theory is often considered the foundation of mathematics, which is kind of interesting as it's a rather young theory, invented in 19th century, certainly much younger than a lot of prior mathematics, which it is now a foundation of. It is a bit funny that foundations were worked out long after the math which they support but this might not be uncommon in science. After all, similarly foundational quantum mechanics might support physical phenomena which have been discovered long before it but weren't initially based on quantum mechanics but other, simpler approximations of nature.</p>
+<p>It turns out that what most of us learn about sets is something that mathematicians call &ldquo;naive set theory&rdquo;. &ldquo;Naive&rdquo; is not an offensive term, is not synonymous with &ldquo;easy&rdquo; but rather it emphasizes the non-axiomatic basis of the theory (I guess &ldquo;naive&rdquo; being related to folk wisdom or based on observation rather than axioms). This naive set theory is sufficient for most math applications and its laws are mostly the same as those of the axiomatic theory (as far as I can tell).</p>
+<p>What is also quite strange to a novice like myself is that there is no single axiomatic set theory, but multiple ones, though one of them, called <a href="https://en.wikipedia.org/wiki/Zermelo%E2%80%93Fraenkel_set_theory">Zermelo-Fraenkel set theory</a> (abbreviated to ZF) seems to be the most commonly accepted one (as you can see maths be a contentious field too!)</p>
+<p>After this introduction, I need to clarify that set theory is not the main focus of this post but rather I will use it to exemplify how careful reading of <em>any</em> theory can expand your understanding of a given topic and lead to serendipitous learning. The requirement is that we actually read the texts carefully, paying special attention to axioms and other bolded out sentences (therefore presumably important) and make an effort to understand what the author is saying and why they're saying it. It can be also instructive to say something slightly different, rephrase the author's words or skip certain words altogether and explore the implications. If the conclusion is unchanged, then perhaps we don't fully understand or correctly interpret the text or maybe the author was a bit sloppy with their wording. Though I wouldn't expect the axioms of set theory to be worded sloppily as it is probably one of the most important and most examined theories of mathematics. Anyway, let me show you how my own process of reading just a single axiom of the ZF set theory went and what I've learnt from it, as I was reading Paul Halmos's &ldquo;Naive set theory&rdquo;, which has a hilarious cover art, by the way:</p>
+<p><a href="https://rahdeck.github.io/unpacking-reality/images/naive_set_theory.jpg"><img src="https://rahdeck.github.io/unpacking-reality/images/naive_set_theory.jpg" alt=""></a></p>
+<p>The first axiom in the book, the axiom of extension, is presented as follows:</p>
+<h3 id="two-sets-are-equal-if-and-only-if-they-have-the-same-elements">Two sets are equal if and only if they have the same elements.</h3>
+<p>After I first read it, I had the following questions:</p>
+<ol>
+<li>What is <em>&ldquo;extension&rdquo;</em> in the name of the axiom?</li>
+<li>Why does it say <em>&ldquo;if and only if&rdquo;</em> and not just <em>&ldquo;if&rdquo;</em> or <em>&ldquo;only if&rdquo;</em>?</li>
+<li>Why is there a need at all to state something so seemingly obvious and even choose it as the first axiom of your theory?</li>
+</ol>
+<p>All these are valid questions and the author answers them but I felt like I needed some additional re-inforcement of the answers to plant them more firmly and more permanently in my mind. To that end I explored other sources such as Wikipedia, StackOverflow forums and other math books to get a better feel/intuition for all those words and concepts. I find that reading about one thing in multiple sources can often enrich and add nuance to my understanding of it.</p>
+<p>Bear in mind that those are my interpretations of the explanations and I could be very well either completely or at least partially wrong. With that caveat here is what I found:</p>
+<ol>
+<li>
+<p><em>Extension</em> is explained by contrasting it with <em>intension</em>. Intension is a specification of how to construct or build something.</p>
+<p>For example, one specification on how to build the set {2,4,8} could be:</p>
+<ul>
+<li>put the first even natural number into the set,</li>
+<li>put the second even natural number into the set,</li>
+<li>put the fourth even natural number into the set.</li>
+</ul>
+<p>Another specification (for the same set) could be:</p>
+<ul>
+<li>put the first even natural number into the set,</li>
+<li>multiply the previous number by two and put the result into the set,</li>
+<li>multiply the previous number by two and put the result into the set.</li>
+</ul>
+<p>Those instructions could be called &ldquo;intensions&rdquo;, or internal specifications. Nevertheless, both instructions produce the same result, namely the set {2,4,8}. This set is the <em>extension</em> or the externally visible result of applying the <em>intension</em>. It's not a perfect analogy but resorting to a well-known phrase from software development, we can say &ldquo;if it walks like a duck and quacks like a duck, it's a duck&rdquo;, i.e. we don't care about the internal implementation of an object but only about its external representation. So we now understand the &ldquo;extension&rdquo; part: the set is determined by its extension (its contents) and not its &ldquo;intension&rdquo; (specification how to build it).</p>
+</li>
+<li>
+<p>As per <a href="https://en.wikipedia.org/wiki/If_and_only_if">its own Wikipedia page</a>, <em>&ldquo;if and only if&rdquo;</em> can be transformed into a two-sentence conjunctive (i.e. two sentences connected with <em>&ldquo;and&rdquo;</em>). It can be shown that none of the two sentences suffices on its own, we need both. Here is my understanding of each of the constituent sentences:</p>
+<ol>
+<li>
+<p><em>&ldquo;If two sets are equal, then they have the same elements&rdquo;</em></p>
+<p>One might be tempted to say that this is enough to assert equality of two sets. However, listing of the possible values of &ldquo;equality&rdquo; of sets yields at least two options: equal and its complement: unequal. Therefore we need to consider also the sentence: <em>&ldquo;If two sets are <strong>unequal</strong>, then they have the same elements&rdquo;</em>.</p>
+<p>In other words, a sentence <em>&ldquo;If two sets are unequal, then they have the same elements&rdquo;</em> is not prohibited logically by the first statement alone. To use an analogy, a sentence &ldquo;If an animal is a mammal, then it has eyes&rdquo; doesn't mean there are no representatives of other classes of animals that have eyes. For example birds have eyes too, so we can also say &ldquo;If an animal is a bird, then it has eyes&rdquo;. As I understand this sentence alone, it only gives us one class of objects that possess the property of having the same elements.</p>
+</li>
+<li>
+<p><em>&ldquo;If two sets have the same elements, then they are equal&rdquo;</em></p>
+<p>Similarly to the first sentence but in the other direction, this sentence doesn't rule out a possibility that there are sets that don't have the same elements but are equal. That is, one can also say <em>&ldquo;If two sets <strong>don't</strong> have the same elements, then they are equal&rdquo;</em>.</p>
+<p>To use the previous analogy, this is like saying <em>&ldquo;If an animal has hoofs, then it is a mammal&rdquo;</em>. That doesn't mean there are no other properties of mammals. For example we can also characterize mammals with <em>&ldquo;If an animal nurses the young on its milk, then it is a mammal&rdquo;</em>. In my understanding, this sentence on its own gives only one property of the equality of sets. There could be more properties that equal sets have.</p>
+</li>
+</ol>
+<p>Only when we combine the two sentences with &ldquo;and&rdquo; (or, to use a shorthand, with &ldquo;if and only if&rdquo;), can we express the original sentence (the axiom of extension) which uniquely characterizes what it means for sets to be equal. To relate again to the world of animals, we might say &ldquo;An animal is a mammal if and only if it nurses the young on its milk&rdquo;.</p>
+<p>After I understood the logical meaning of <em>&ldquo;if and only if&rdquo;</em>, I started applying this logic to other sentences I saw around me to make sure that I understand them or see if they are worded perhaps a bit sloppily and do not stand up to scrutiny. I think I found one such phrasing below.</p>
+<p>Consider the following sentence (which I came across in a maths book): <em>&ldquo;Set A is a subset of set B if all elements of set A are also elements of set B&rdquo;</em>. Is <em>&ldquo;if&rdquo;</em> a necessary and sufficient condition for this sentence to be true? Given that I don't have a strong intuition or fluency with <em>&ldquo;if&rdquo;</em>, <em>&ldquo;only if&rdquo;</em> and <em>&ldquo;if and only if&rdquo;</em>, for me the first step would be to reword (rearrange) the sentence into an equivalent statement of <em>&ldquo;If all elements of set A are also elements of set B, then set A is a subset of set B&rdquo;</em>. This ordering is how it would be expressed in most programming languages and is more natural to me. If we refer to bullet point #1 above and accept its conclusion, it seems that this sentence doesn't exclude sentences such as <em>&ldquo;If not all elements of set A are also elements of set B, then set A is a subset of set B&rdquo;</em> or even <em>&ldquo;If no elements of set A are elements of set B, then set A is a subset of set B&rdquo;</em>. We also need the implication in the other direction, i.e. <em>&ldquo;If set A is a subset of a set B, then all elements of set A are also elements of set B&rdquo;</em>.</p>
+</li>
+<li>
+<p>I don't have an answer as to why this needs to be stated as an axiom and the first one to boot in the theory. I assume there are good reasons for it such as that without it the theory would not be consistent or there would be paradoxes in it or some other grave situation would potentially arise. Let's not forget that mathematicians are a picky and inquisitive bunch and they would probably find a hole in the theory if this axiom was not included. Maybe they already did and this axiom is the result of such inquiry? Or perhaps it's simply there to state this obvious fact as axioms frequently do? I might have an answer once I finish this short and interesting book.</p>
+</li>
+</ol>
+<p>To sum it up, I wanted to show how trying to dissect a seemingly simple statement might actually lead to other, unrelated (serendipitous) learnings. It's not important whether the original statement we are analyzing is deep or trivial and that it might be obvious to someone else. What matters is that we have reduced our ignorance, increased our knowledge of logic and this will pay off in perhaps yet unknown ways. Such a simple and easy win might also encourage us to do more of such inquiries in the future and the benefits of those will only compound over time.</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://rahdeck.github.io/unpacking-reality/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="https://rahdeck.github.io/unpacking-reality/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-156129554-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  </body>
+</html>
+

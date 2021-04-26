@@ -6,10 +6,19 @@
     <description>Recent content on Harping on about the same old waffle</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Sep 2020 22:32:00 +1000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Apr 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://rahdeck.github.io/unpacking-reality/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Revelations of set theory</title>
+      <link>https://rahdeck.github.io/unpacking-reality/2021/04/26/revelations-of-set-theory/</link>
+      <pubDate>Mon, 26 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rahdeck.github.io/unpacking-reality/2021/04/26/revelations-of-set-theory/</guid>
+      <description>When reading math books, sets jump at you from every corner (well, every page). A lot of mathematical concepts are expressed in terms of sets or operations on sets (functions, relations). Set theory is often considered the foundation of mathematics, which is kind of interesting as it&#39;s a rather young theory, invented in 19th century, certainly much younger than a lot of prior mathematics, which it is now a foundation of.</description>
+    </item>
     
     <item>
       <title>Beneficiaries of Bernoulli</title>
