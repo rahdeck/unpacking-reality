@@ -2,6 +2,7 @@
 title: "Euclidean algorithm explained"
 published: 2021-09-02
 author: "rahdeck"
+draft: false
 ---
 
 [![](/images/thumbnails/euclid.jpg)](/images/euclid.jpg)
