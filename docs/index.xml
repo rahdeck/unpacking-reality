@@ -6,10 +6,20 @@
     <description>Recent content on Harping on about the same old waffle</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Sep 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://rahdeck.github.io/unpacking-reality/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Euclidean algorithm explained</title>
+      <link>https://rahdeck.github.io/unpacking-reality/2021/09/02/euclidean-algorithm-explained/</link>
+      <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rahdeck.github.io/unpacking-reality/2021/09/02/euclidean-algorithm-explained/</guid>
+      <description>One of the earliest known examples of an algorithm is a 2,300+ years old algorithm by Euclid to find the greatest common divisor (GCD) of two integers. It is a very well studied algorithm, a true classic in the field of mathematics and computer science, but I only understood how it works and the intuition behind it very recently.
+Well, better late than never, and so that you, dear reader, are spared such ignorance, I will try and present a hopefully intuitive reasoning on why it works.</description>
+    </item>
     
     <item>
       <title>Revelations of set theory</title>
