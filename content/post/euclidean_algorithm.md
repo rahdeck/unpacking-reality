@@ -6,6 +6,7 @@ draft: false
 ---
 
 [![](/images/thumbnails/euclid.jpg)](/images/euclid.jpg)
+***Euclid holding a compass in a painting of about 1474 (courtesy of Wikipedia)***
 
 One of the earliest known examples of an algorithm is a 2,300+ years old [algorithm by Euclid](https://en.wikipedia.org/wiki/Euclidean_algorithm) to find the greatest common divisor (GCD) of two integers. It is a very well studied algorithm, a true classic in the field of mathematics and computer science, but I only understood how it works and the intuition behind it very recently.
 
