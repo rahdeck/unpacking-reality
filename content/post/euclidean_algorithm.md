@@ -30,14 +30,14 @@ I had difficulty grasping why in step #3 we can replace the initial division \\(
 
 ![base case](/images/line_segments_base.png)
 
-We have segment *a*, segment *b* and the remainder *c* (*c* < *b*). Why in step #2 can we replace *a* with *b* and *b* with *c*?
+We have segment *a*, segment *b* and the remainder *c* (*c* < *b*). Why in step #3 can we replace *a* with *b* and *b* with *c*?
 
 Euclid's great observation (or whoever came up with this algorithm, as it is suspected that Euclid only documented an already existing algorithm and didn't invent it) was that if *a* and *b* have a common divisor, then *b* and *c* **MUST** have that same common divisor too!
 
-Let's try and reason about it. By hypothesis, we know that there exist some common divisor of *a* and *b* (even if it's just a "unit" length, or 1), let's call it *g*. Let's assume that it is **NOT** a divisor of *c*. Then, *a* is divided by *g* an integral number of times and so is *b*. But if *b* is divided by *g* an integral number of times, let's say *x*, then it means if we "stack" *g* on itself *x* number of times, we get a line segment of length *b*, i.e. it's not shorter or longer, but exactly *b*. But we also know that if we stack *g* *y* number of times on itself, then we get a line segment of length *a* (it is a divisor of *a* too). Here is this situation shown graphically:
+Let's try and reason about it. By hypothesis, we know that there exist some common divisor of *a* and *b* (even if it's just a "unit" length, or 1), let's call it *g*. Let's assume that it is **NOT** a divisor of *c*. Then, *a* is divisible by *g* an integral number of times (i.e. without remainder) and so is *b*. But if *b* is divided by *g* an integral number of times, let's say *x*, then it means if we "stack" *g* on itself *x* number of times, we get a line segment of length *b*, i.e. it's not shorter or longer, but exactly *b*. But we also know that if we stack *g* *y* number of times on itself, then we get a line segment of length *a* (it is a divisor of *a* too). Here is this situation shown graphically:
 
 ![common divisor](/images/line_segments_step_1.png)
 
-Therefore, *g* must be contained in *c* exactly \\((y-x)\\) number (an integral number) of times! It is a contradiction to our assumption that it is not a divisor of *c*!
+Therefore, *g* must be contained in *c* exactly \\((y-x)\\) number (an integral number) of times! It is a contradiction to our assumption that it is not a divisor of *c*! And since it cannot be a divisor and not-a-divisor (two contradictory things) at the same time, we conclude that it is a divisor of **c**.
 
 This is the crucial insight that allows us to reduce the problem to smaller numbers and keep going in the same fashion until the remainder of the division is 0 and the algorithm terminates.
