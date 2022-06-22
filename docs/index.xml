@@ -17,7 +17,7 @@
       <pubDate>Wed, 22 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://rahdeck.github.io/unpacking-reality/2022/06/22/exploding-dice-probabilities/</guid>
-      <description>Exploding dice This maths exercise was inspired by a feature called &amp;ldquo;exploding dice&amp;rdquo; in the &amp;ldquo;Chaos in the Old World&amp;rdquo; board game.
+      <description>This maths exercise was inspired by a feature called &amp;ldquo;exploding dice&amp;rdquo; in the &amp;ldquo;Chaos in the Old World&amp;rdquo; board game.
 Notation  n: number of hits k: number of dice z: number of dice with zero hits  Rules The dice are regular six-sided dice.
 The rules for rolling k (where k usually ranges from 1 to 6) dice are as follows:
  If a 1, 2 or 3 is rolled, this die is a &amp;ldquo;miss&amp;rdquo; and is done (no more rolls).</description>
