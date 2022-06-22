@@ -6,8 +6,8 @@
 <meta name="generator" content="Hugo 0.62.0" />
 
 
-<title>Euclidean algorithm explained - Harping on about the same old waffle</title>
-<meta property="og:title" content="Euclidean algorithm explained - Harping on about the same old waffle">
+<title>Euclidean algorithm explained - Refrying the same old waffle</title>
+<meta property="og:title" content="Euclidean algorithm explained - Refrying the same old waffle">
 
 
   <link href='https://rahdeck.github.io/unpacking-reality/favicon.ico' rel='icon' type='image/x-icon'/>
@@ -79,11 +79,11 @@
 <p>The algorithm keeps doing those replacements and divisions until the remainder of the division is 0. The divisor in this division is the answer.</p>
 <p>I had difficulty grasping why in step #3 we can replace the initial division \(a \div b\) with \(b \div c\). What does one have to do with another and why does it make sense? Turns out that representing this algorithm graphically helped me understand it so I want to share it with you. Here is the initial situation:</p>
 <p><img src="https://rahdeck.github.io/unpacking-reality/images/line_segments_base.png" alt="base case"></p>
-<p>We have segment <em>a</em>, segment <em>b</em> and the remainder <em>c</em> (<em>c</em> &lt; <em>b</em>). Why in step #2 can we replace <em>a</em> with <em>b</em> and <em>b</em> with <em>c</em>?</p>
+<p>We have segment <em>a</em>, segment <em>b</em> and the remainder <em>c</em> (<em>c</em> &lt; <em>b</em>). Why in step #3 can we replace <em>a</em> with <em>b</em> and <em>b</em> with <em>c</em>?</p>
 <p>Euclid's great observation (or whoever came up with this algorithm, as it is suspected that Euclid only documented an already existing algorithm and didn't invent it) was that if <em>a</em> and <em>b</em> have a common divisor, then <em>b</em> and <em>c</em> <strong>MUST</strong> have that same common divisor too!</p>
-<p>Let's try and reason about it. By hypothesis, we know that there exist some common divisor of <em>a</em> and <em>b</em> (even if it's just a &ldquo;unit&rdquo; length, or 1), let's call it <em>g</em>. Let's assume that it is <strong>NOT</strong> a divisor of <em>c</em>. Then, <em>a</em> is divided by <em>g</em> an integral number of times and so is <em>b</em>. But if <em>b</em> is divided by <em>g</em> an integral number of times, let's say <em>x</em>, then it means if we &ldquo;stack&rdquo; <em>g</em> on itself <em>x</em> number of times, we get a line segment of length <em>b</em>, i.e. it's not shorter or longer, but exactly <em>b</em>. But we also know that if we stack <em>g</em> <em>y</em> number of times on itself, then we get a line segment of length <em>a</em> (it is a divisor of <em>a</em> too). Here is this situation shown graphically:</p>
+<p>Let's try and reason about it. By hypothesis, we know that there exist some common divisor of <em>a</em> and <em>b</em> (even if it's just a &ldquo;unit&rdquo; length, or 1), let's call it <em>g</em>. Let's assume that it is <strong>NOT</strong> a divisor of <em>c</em>. Then, <em>a</em> is divisible by <em>g</em> an integral number of times (i.e. without remainder) and so is <em>b</em>. But if <em>b</em> is divided by <em>g</em> an integral number of times, let's say <em>x</em>, then it means if we &ldquo;stack&rdquo; <em>g</em> on itself <em>x</em> number of times, we get a line segment of length <em>b</em>, i.e. it's not shorter or longer, but exactly <em>b</em>. But we also know that if we stack <em>g</em> <em>y</em> number of times on itself, then we get a line segment of length <em>a</em> (it is a divisor of <em>a</em> too). Here is this situation shown graphically:</p>
 <p><img src="https://rahdeck.github.io/unpacking-reality/images/line_segments_step_1.png" alt="common divisor"></p>
-<p>Therefore, <em>g</em> must be contained in <em>c</em> exactly \((y-x)\) number (an integral number) of times! It is a contradiction to our assumption that it is not a divisor of <em>c</em>!</p>
+<p>Therefore, <em>g</em> must be contained in <em>c</em> exactly \((y-x)\) number (an integral number) of times! It is a contradiction to our assumption that it is not a divisor of <em>c</em>! And since it cannot be a divisor and not-a-divisor (two contradictory things) at the same time, we conclude that it is a divisor of <strong>c</strong>.</p>
 <p>This is the crucial insight that allows us to reduce the problem to smaller numbers and keep going in the same fashion until the remainder of the division is 0 and the algorithm terminates.</p>
 
     </div>

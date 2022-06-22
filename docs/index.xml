@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Harping on about the same old waffle</title>
+    <title>Refrying the same old waffle</title>
     <link>https://rahdeck.github.io/unpacking-reality/</link>
-    <description>Recent content on Harping on about the same old waffle</description>
+    <description>Recent content on Refrying the same old waffle</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jun 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://rahdeck.github.io/unpacking-reality/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Exploding dice probabilities</title>
+      <link>https://rahdeck.github.io/unpacking-reality/2022/06/22/exploding-dice-probabilities/</link>
+      <pubDate>Wed, 22 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://rahdeck.github.io/unpacking-reality/2022/06/22/exploding-dice-probabilities/</guid>
+      <description>Exploding dice This maths exercise was inspired by a feature called &amp;ldquo;exploding dice&amp;rdquo; in the &amp;ldquo;Chaos in the Old World&amp;rdquo; board game.
+Notation  n: number of hits k: number of dice z: number of dice with zero hits  Rules The dice are regular six-sided dice.
+The rules for rolling k (where k usually ranges from 1 to 6) dice are as follows:
+ If a 1, 2 or 3 is rolled, this die is a &amp;ldquo;miss&amp;rdquo; and is done (no more rolls).</description>
+    </item>
     
     <item>
       <title>Euclidean algorithm explained</title>
@@ -17,8 +29,8 @@
       <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://rahdeck.github.io/unpacking-reality/2021/09/02/euclidean-algorithm-explained/</guid>
-      <description>One of the earliest known examples of an algorithm is a 2,300+ years old algorithm by Euclid to find the greatest common divisor (GCD) of two integers. It is a very well studied algorithm, a true classic in the field of mathematics and computer science, but I only understood how it works and the intuition behind it very recently.
-Well, better late than never, and so that you, dear reader, are spared such ignorance, I will try and present a hopefully intuitive reasoning on why it works.</description>
+      <description>Euclid holding a compass in a painting of about 1474 (courtesy of Wikipedia)
+One of the earliest known examples of an algorithm is a 2,300+ years old algorithm by Euclid to find the greatest common divisor (GCD) of two integers. It is a very well studied algorithm, a true classic in the field of mathematics and computer science, but I only understood how it works and the intuition behind it very recently.</description>
     </item>
     
     <item>

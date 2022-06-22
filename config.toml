@@ -1,7 +1,7 @@
 baseurl = "https://rahdeck.github.io/unpacking-reality/"
 canonifyURLs = "true"
 languageCode = "en-us"
-title = "Harping on about the same old waffle"
+title = "Refrying the same old waffle"
 theme = "hugo-lithium"
 author = "Radoslaw Majkut"
 disqusShortname = ""
@@ -26,7 +26,7 @@ googleAnalytics = "UA-156129554-1"
     highlightjsTheme = "github"
 
     MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
-    MathJaxVersion = "2.7.5"
+    # MathJaxVersion = "2.7.5"
 
     # path to the favicon, under "static"
     favicon = "favicon.ico"

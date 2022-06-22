@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.62.0" />
+
+
+<title>Exploding dice probabilities - Refrying the same old waffle</title>
+<meta property="og:title" content="Exploding dice probabilities - Refrying the same old waffle">
+
+
+  <link href='https://rahdeck.github.io/unpacking-reality/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://rahdeck.github.io/unpacking-reality/css/fonts.css" media="all">
+<link rel="stylesheet" href="https://rahdeck.github.io/unpacking-reality/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="https://rahdeck.github.io/unpacking-reality/" class="nav-logo">
+    <img src="https://rahdeck.github.io/unpacking-reality/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://rahdeck.github.io/unpacking-reality/about/">About</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">6 min read</span>
+    
+
+    <h1 class="article-title">Exploding dice probabilities</h1>
+
+    
+    <span class="article-date">2022-06-22</span>
+    
+
+    <div class="article-content">
+      <h1 id="exploding-dice">Exploding dice</h1>
+<p>This maths exercise was inspired by a feature called &ldquo;exploding dice&rdquo; in the
+&ldquo;Chaos in the Old World&rdquo; board game.</p>
+<h2 id="notation">Notation</h2>
+<ul>
+<li><em><code>n</code></em>: number of hits</li>
+<li><em><code>k</code></em>: number of dice</li>
+<li><em><code>z</code></em>: number of dice with zero hits</li>
+</ul>
+<h2 id="rules">Rules</h2>
+<p>The dice are regular six-sided dice.</p>
+<p>The rules for rolling <em>k</em> (where <em>k</em> usually ranges from 1 to 6) dice are as
+follows:</p>
+<ol>
+<li>If a 1, 2 or 3 is rolled, this die is a &ldquo;miss&rdquo; and is done (no more rolls).</li>
+<li>If a 4 or 5 is rolled, this die is a &ldquo;hit&rdquo; and is done (no more rolls).</li>
+<li>If a 6 is rolled, this die is a &ldquo;hit&rdquo; and is re-rolled, subject to the same
+rules (which implies it can be re-rolled multiple times if a sequence of
+sixes is produced). This is the so-called &ldquo;exploding dice&rdquo;.</li>
+</ol>
+<h2 id="problem-statement">Problem statement</h2>
+<p>Given those rules, figure out the probability mass function parametrized on the
+number of dice. Or in other words, assuming we have <em>k</em> dice, what is the
+probability of getting exactly <em>n</em> hits?</p>
+<h2 id="chunking-the-problem">Chunking the problem</h2>
+<p>I only came up with a piece-wise definition of the function parametrized on <em>n</em>
+and <em>k</em> and for the most interesting case with <em>n</em> &gt; 0 and <em>k</em> &gt; 0, the formula
+has an internal summation so it's not a closed-form formula. Some pieces of the
+formula can most likely be pulled before the summation so there might exist a
+more succinct version that does fewer computations.</p>
+<p>These are the three pieces which are later solved:</p>
+<ol>
+<li><em>n</em> = 0 (zero hits)</li>
+<li><em>n</em> &gt; 0 and <em>k</em> = 0 (zero dice and more than zero hits)</li>
+<li><em>n</em> &gt; 0 and <em>k</em> &gt; 0 (more than zero dice and more than zero hits - the most
+interesting scenario)</li>
+</ol>
+<h3 id="n--0"><em>n</em> = 0</h3>
+<p>This is a relatively simple scenario. Each die has a probability of
+<code>$\frac{1}{2}$</code> of getting 0 hits (by rolling 1, 2, or 3), so all <em>k</em> dice
+getting 0 hits has a total probability of <code>$(\frac{1}{2})^k$</code>.</p>
+<p>To double check this result, we can think about it in a more combinatorial way
+and calculate the ratio of the number of ways to roll 1, 2, or 3 on <em>k</em> dice
+over all possible rolls of <em>k</em> dice. This should be <code>$\frac{3^k}{6^k} = (\frac{3}{6})^k = (\frac{1}{2})^k$</code>, so we get the same result.</p>
+<h3 id="n--0-and-k--0"><em>n</em> &gt; 0 and <em>k</em> = 0</h3>
+<p>This probability has a constant value of 0, as you cannot get more than 0 hits
+with 0 dice.</p>
+<h3 id="n--0-and-k--0-1"><em>n</em> &gt; 0 and <em>k</em> &gt; 0</h3>
+<h4 id="single-die-with-n-hits">Single die with <em>n</em> hits</h4>
+<p>First, I work out the probability mass function for a single die, because it
+seems much more tractable than multiple dice.</p>
+<p>Let's start with one hit, the diagram below shows how this can happen:</p>
+<p><img src="https://rahdeck.github.io/unpacking-reality/images/exploding-dice-probabilities-graph-01.png" alt="one hit"></p>
+<p>As per the graph, you can either roll a 4 or a 5 and stop, or roll a 6 followed
+by a 1, 2, or 3. The probability of this happening is <code>$2 \cdot \frac{1}{6} + 3 \cdot (\frac{1}{6})^2 = \frac{5}{12}$</code>.</p>
+<p>For two hits, the graph has one more level:</p>
+<p><img src="https://rahdeck.github.io/unpacking-reality/images/exploding-dice-probabilities-graph-02.png" alt="two hits"></p>
+<p>and the probability is: <code>$2 \cdot (\frac{1}{6})^2 + 3 \cdot (\frac{1}{6})^3 = \frac{5}{72}$</code>.</p>
+<p>To generalize it to <em>n</em> hits, as per the following diagram:</p>
+<p><img src="https://rahdeck.github.io/unpacking-reality/images/exploding-dice-probabilities-graph-03.png" alt="n hits"></p>
+<p>we can work out the formula to be: <code>$2 \cdot (\frac{1}{6})^n + 3 \cdot (\frac{1}{6})^{n+1} = \frac{5}{2 \cdot 6^n}$</code>.</p>
+<h4 id="multiple-dice-with-hits-total-of-n-hits">Multiple dice with hits (total of <em>n</em> hits)</h4>
+<p>For multiple dice, we make the following observations:</p>
+<ol>
+<li>
+<p>The total number of hits (<em>n</em>) spread among all dice (<em>k</em>) is like addition
+of <em>k</em> non-negative integers (i.e. including 0) whose total is <em>n</em>.</p>
+<p>For example, if <em>k</em> (number of dice) = 3 and <em>n</em> (number of hits) = 5, here
+are the ways in which it can happen:</p>
+<ol>
+<li>0 + 0 + 5 (3 permutations)</li>
+<li>0 + 1 + 4 (6 permutations)</li>
+<li>0 + 2 + 3 (6 permutations)</li>
+<li>1 + 1 + 3 (3 permutations)</li>
+<li>1 + 2 + 2 (3 permutations)</li>
+</ol>
+<p>Adding up all the permutations (3 + 6 + 6 + 3 + 3), we see this can happen
+in 21 ways. I also learnt that this number is the number of
+<a href="https://en.wikipedia.org/wiki/Composition_(combinatorics)">weak k-compositions of an integer</a>
+and is equal to <code>$\binom{n+k-1}{k-1} = \binom{7}{2} = 21$</code>, which agrees
+with our manual calculation.</p>
+<p>However, counting the probabilities with weak compositions seems hard,
+because of the special case of dice which had 0 hits, which have different
+probability than non-zero-hits dice. For me, a more intuitive solution is
+slightly modified, namely I will be counting the number of &ldquo;non-weak&rdquo;
+compositions (where zeros are not allowed) across <em>k</em> minus <em>z</em> (<em>z</em> for
+zero-hit dice) dice and multiplying it by the product of the number of ways
+of distributing zeros among the remaining <em>z</em> dice and the probability of
+getting a zero.</p>
+</li>
+<li>
+<p>The number of &ldquo;non-weak&rdquo; or &ldquo;strict&rdquo; (I don't know if these are commonly
+used or accepted terms) compositions is <code>$\binom{n-1}{k-1}$</code> and we iterate
+over numbers from 0 (no dice with 0 hits) up to <em>k</em>-1 (only one die had any
+hits, <em>n</em> hits to be exact. Note that we cannot go all the way to <em>k</em> as
+that would imply we got 0 hits on all dice) and calculate their
+probabilities and then add them up.</p>
+<p>To exemplify, we would iterate over the following scenarios for <em>n</em>=5 and
+<em>k</em>=3 and <em>z</em> from 0 to <em>k</em>-1</p>
+<ol>
+<li><em>z</em> = 0, <em>n</em> = 5, <em>k</em> = 3 (no dice had 0 hits):
+<ol>
+<li>1 + 1 + 3</li>
+<li>1 + 2 + 2</li>
+</ol>
+</li>
+<li><em>z</em> = 1, <em>n</em> = 5, <em>k</em> = 2 (one die had 0 hits):
+<ol>
+<li>0 + 1 + 4</li>
+<li>0 + 2 + 3</li>
+</ol>
+</li>
+<li><em>z</em> = 2, <em>n</em> = 5, <em>k</em> = 1 (two dice had 0 hits):
+<ol>
+<li>0 + 0 + 5</li>
+</ol>
+</li>
+</ol>
+<p>For each of the scenarios we notice the following:</p>
+<ol>
+<li>
+<p>Multiplying the probabilities of dice which had at least one hit, for
+example when <em>k</em>=2 and <em>n</em>=5 such as one die with 1 hit and the other
+with 4 hits, is <code>$\frac{5^1}{2^1 \cdot 6^1} \cdot \frac{5^1}{2^1 \cdot 6^4} = \frac{5^k}{2^k6^n}$</code> or when <em>k</em>=3 and <em>n</em>=5 such as one die with
+1 hit, the second die with 1 hit and the third die with 3 hits, is:
+<code>$\frac{5^1}{2^1 \cdot 6^1} \cdot \frac{5^1}{2^1 \cdot 6^1} \cdot \frac{5^1}{2^1 \cdot 6^3} = \frac{5^k}{2^k6^n}$</code> which is always the
+same value for given <em>k</em> and <em>n</em>, i.e <code>$\frac{5^k}{2^k6^n}$</code>.</p>
+<p>So our summation is going to be:</p>
+<p><code>$\sum\limits_{z=0}^{k-1} \binom{n-1}{k-z-1}\frac{5^{k-z}}{2^{k-z}6^n}$</code></p>
+</li>
+<li>
+<p>How do we account for dice with 0 hits?</p>
+<p>To account for dice with 0 hits we will need the following pieces of
+information:</p>
+<ul>
+<li>The probability of a die getting 0 hits (constant and equal to
+<code>$\frac{1}{2}$</code>),</li>
+<li>How many 0-hit dice there were (this is given by our index variable
+<em>z</em>),</li>
+<li>How many ways there are to distribute the 0-hit dice
+(<code>$\binom{k}{z}$</code>).</li>
+</ul>
+<p>So our summation now needs to absorb this information and be modified
+to:</p>
+<p><code>$\sum\limits_{z=0}^{k-1} \binom{n-1}{k-z-1} \frac{5^{k-z}}{2^{k-z}6^n} (\frac{1}{2})^z\binom{k}{z}$</code></p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="final-definition-of-the-function">Final definition of the function</h2>
+<p>Now that we have split/chunked the problem, we can attempt to write the
+definition of the probability mass function. Here is such a definition, with the
+domain of the function's both parameters (<em>n</em> and <em>k</em>) constrained to
+non-negative integers:</p>
+<p>$$
+p(n,k)= \begin{cases}
+\frac{1}{2^k} &amp; \text{if } n=0\\<br>
+0 &amp; \text{if } n&gt;0 \text{ and } k=0\\<br>
+\sum\limits_{z=0}^{k-1}\binom{n-1}{k-z-1}\frac{5^{k-z}}{2^{k-z}6^n}(\frac{1}{2})^z\binom{k}{z} &amp; \text{if }n&gt;0\text{ and }k&gt;0
+\end{cases}
+$$</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://rahdeck.github.io/unpacking-reality/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="https://rahdeck.github.io/unpacking-reality/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script src="https://rahdeck.github.io/unpacking-reality/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-156129554-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  </body>
+</html>
+
